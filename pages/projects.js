@@ -16,7 +16,7 @@ export default function Projects({ projects }) {
           총 프로젝트 :
           <span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 m-6 py-10 gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 m-6 py-10 gap-8">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
