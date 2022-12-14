@@ -22,8 +22,8 @@ export default function Hero() {
           없으면 맺어, 아름다우냐?
         </p>
         <div className="flex justify-center">
-          <Link href="/projects" className="btn-project">
-            프로젝트 보러가기
+          <Link href="/projects">
+            <a className="btn-project">프로젝트 보러가기</a>
           </Link>
         </div>
       </div>
