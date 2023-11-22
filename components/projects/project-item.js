@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export default function ProjectItem({ data }) {
+  console.log(data.properties);
   const Title = data.properties.Name.title[0].plain_text;
   const github = data.properties.GitHub.url;
   const description = data.properties.Description.rich_text[0].plain_text;
@@ -47,7 +48,7 @@ export default function ProjectItem({ data }) {
         <h3 className="mt-4 text-xl">{description}</h3>
         <a href={github}>GitHub 바로가기</a>
         <p className="my-1">
-          작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)
+          작업기간 : {start} - {end}
         </p>
         <div className="flex items-start mt-2">
           {tags.map((aTag) => (
