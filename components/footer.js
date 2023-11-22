@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <footer className="body-font">
         <div>
-          <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <div className="container px-32 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                 <span className="ml-3 text-xl">Yuhan's PortFolio</span>

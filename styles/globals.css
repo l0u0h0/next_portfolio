@@ -2,23 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-primary {
-  @apply bg-white dark:bg-slate-800;
+@font-face {
+  font-family: 'jalnan';
+  src: url(/fonts/jalnan.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.btn-project {
-  @apply inline-flex text-white dark:text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg;
-}
+@layer components {
+  .bg-primary {
+    @apply bg-white dark:bg-slate-800;
+  }
 
-.project-card {
-  @apply flex flex-col m-3 rounded-xl w-60 md:w-80
-  transition duration-300 transform border border-gray-300
-  hover:scale-105 hover:shadow-lg
-  bg-slate-100
-  dark:border-gray-200/50
-  dark:bg-slate-700
-  dark:hover:shadow-gray-400/50
-  hover:text-blue-600;
+  .title-font {
+    @apply font-jalnan;
+  }
+
+  .btn-project {
+    @apply inline-flex text-white dark:text-white bg-slate-700 dark:bg-slate-400 border-0 py-2 px-6 focus:outline-none hover:bg-slate-400 hover:text-slate-100 hover:dark:bg-slate-700 hover:dark:text-slate-200 rounded text-lg;
+  }
+
+  .project-card {
+    @apply flex flex-col m-3 rounded-xl w-60 md:w-80
+    transition duration-300 transform border border-gray-300
+    hover:scale-105 hover:shadow-lg
+    bg-slate-100
+    dark:border-gray-200/50
+    dark:bg-slate-700
+    dark:hover:shadow-gray-400/50
+    hover:text-blue-600;
+  }
 }
 
 h1,
@@ -40,5 +53,5 @@ a {
 }
 
 p {
-  @apply text-slate-500 dark:text-slate-400;
+  @apply text-slate-600 dark:text-slate-300;
 }

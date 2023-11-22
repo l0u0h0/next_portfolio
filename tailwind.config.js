@@ -7,7 +7,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jalnan: ['Jalnan', 'san-serif']
+      }
+    },
   },
   plugins: [],
 };

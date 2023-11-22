@@ -27,8 +27,8 @@ export default function Projects({ projects }) {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen min-w-[376px] px-6 py-24 mb-10">
         <Head>
-          <title>Port Folio</title>
-          <meta name="description" content="l0u0h0's PortFolio(Projects) - with Notion" />
+          <title>Projects</title>
+          <meta name="description" content="l0u0h0's Projects with Notion" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-40 text-center md:text-left">
