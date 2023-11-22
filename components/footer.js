@@ -6,10 +6,10 @@ export default function Footer() {
     <>
       <footer className="body-font">
         <div>
-          <div className="container px-32 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <div className="container px-32 py-10 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <span className="ml-3 text-xl">Yuhan's PortFolio</span>
+                <span className="ml-3 text-2xl">Yuhan's PortFolio</span>
               </a>
             </Link>
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
@@ -23,11 +23,11 @@ export default function Footer() {
                 @notion~
               </a>
             </p>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center items-center sm:justify-start">
               <a className="text-gray-500" href="https://github.com/l0u0h0" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   viewBox="-1 -1 24 24"
                 >
                   <rect
@@ -47,7 +47,7 @@ export default function Footer() {
               <a className="ml-3 text-gray-500" href="https://velog.io/@l0u0h0" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
                   <rect
@@ -71,7 +71,7 @@ export default function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>

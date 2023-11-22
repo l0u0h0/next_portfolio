@@ -1,7 +1,9 @@
 import Layout from "../components/layout";
 import Head from "next/head";
+import Image from "next/image";
 import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
+import { useTheme } from "next-themes";
 
 export default function Projects({ projects }) {
   const sortProjects = projects.results.slice().sort((a, b) => {
@@ -23,6 +25,8 @@ export default function Projects({ projects }) {
     return b_startDate - a_startDate;
   });
 
+  const { theme, _setTheme } = useTheme();
+
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen min-w-[376px] px-6 py-24 mb-10">
@@ -31,10 +35,19 @@ export default function Projects({ projects }) {
           <meta name="description" content="l0u0h0's Projects with Notion" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-40 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-0 md:gap-10 text-center md:text-left items-center">
+          <Image 
+            src={theme === 'dark' ? `/images/Macbook_white.png` : `/images/Macbook_black.png`}
+            alt="Cover Image"
+            width="100"
+            height="100"
+            layout="responsive"
+            objectFit="fill"
+            quality={100}
+          />
           <h1 className="text-3xl font-bold sm:text-4xl">
-            총 프로젝트 :
-            <span className="pl-4 text-slate-700 dark:text-slate-300">{projects.results.length}</span>
+            총 프로젝트 :&nbsp;
+            <span className="text-zinc-700 dark:text-zinc-300">{projects.results.length}</span>
           </h1>
         </div>
         <hr className="w-2/3 min-w-[246px] md:min-w-[720px] mt-4" />
