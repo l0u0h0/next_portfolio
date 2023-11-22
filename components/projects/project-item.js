@@ -25,7 +25,7 @@ export default function ProjectItem({ data }) {
           layout="responsive"
           objectFit="cover"
           quality={100}
-          priority
+          // priority
         />
       </div>
       <div className="p-4 flex flex-col">
