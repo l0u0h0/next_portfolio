@@ -32,13 +32,13 @@ export default function ProjectItem({ data }) {
   };
 
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={() => location.href = `${data.public_url}`}>
       <Image
         className="rounded-t-xl"
         src={imgSrc}
         alt="Cover Image"
         width="100"
-        height="60"
+        height="50"
         layout="responsive"
         objectFit="cover"
         quality={100}

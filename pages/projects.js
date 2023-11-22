@@ -4,7 +4,6 @@ import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
 
 export default function Projects({ projects }) {
-  console.log(projects.results);
   const sortProjects = projects.results.slice().sort((a, b) => {
     const a_start = a.properties.WorkPeriod.date.start.split("-");
     const b_start = b.properties.WorkPeriod.date.start.split("-");
@@ -23,7 +22,6 @@ export default function Projects({ projects }) {
     
     return b_startDate - a_startDate;
   });
-  console.log(sortProjects);
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-6 py-24 mb-10">
