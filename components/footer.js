@@ -24,7 +24,7 @@ export default function Footer() {
               </a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <a className="text-gray-500">
+              <a className="text-gray-500" href="https://github.com/l0u0h0" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"
@@ -44,7 +44,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 text-gray-500" href="https://velog.io/@l0u0h0" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"
@@ -64,7 +64,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 text-gray-500" href="https://www.instagram.com/gom.dol.ssu/" target="_blank">
                 <svg
                   fill="none"
                   stroke="currentColor"

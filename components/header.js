@@ -23,7 +23,7 @@ export default function Header() {
             <span className="ml-3 text-3xl font-bold">l0u0h0's</span>
           </a>
         </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-lg justify-center">
+        <nav className="md:ml-auto flex flex-wrap items-center text-lg title-font justify-center">
           <Link href="/">
             <a className="mr-5 hover:text-gray-900">홈</a>
           </Link>
@@ -31,7 +31,7 @@ export default function Header() {
             <a className="mr-5 hover:text-gray-900">프로젝트</a>
           </Link>
           {/* contact 페이지 링크 예정 */}
-          <Link href="/">
+          <Link href="/contact">
             <a className="mr-5 hover:text-gray-900">연락하기</a>
           </Link>
           {/* 다크모드 토글버튼 */}

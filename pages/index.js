@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../components/Home/hero";
 import Layout from "../components/layout";
 
@@ -7,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>l0u0h0</title>
+        <title>l0u0h0's</title>
         <meta name="description" content="l0u0h0's Front-end Portfolio Web" />
         <meta name="author" content="l0u0h0" />
 
