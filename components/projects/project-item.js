@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function ProjectItem({ data }) {
-  console.log(data.properties);
   const Title = data.properties.Name.title[0].plain_text;
   const github = data.properties.GitHub.url;
   const description = data.properties.Description.rich_text[0].plain_text;
@@ -10,39 +9,24 @@ export default function ProjectItem({ data }) {
   const start = data.properties.WorkPeriod.date.start;
   const end = data.properties.WorkPeriod.date.end;
 
-  const calculatedPeriod = (start, end) => {
-    const startDateStringArray = start.split("-");
-    const endDateStringArray = end.split("-");
-
-    let startDate = new Date(
-      startDateStringArray[0],
-      startDateStringArray[1],
-      startDateStringArray[2]
-    );
-    let endDate = new Date(
-      endDateStringArray[0],
-      endDateStringArray[1],
-      endDateStringArray[2]
-    );
-
-    const diffInMs = Math.abs(endDate - startDate);
-    const result = diffInMs / (1000 * 60 * 60 * 24);
-
-    return result;
-  };
-
   return (
-    <div className="project-card" onClick={() => location.href = `${data.public_url}`}>
-      <Image
-        className="rounded-t-xl"
-        src={imgSrc}
-        alt="Cover Image"
-        width="100"
-        height="50"
-        layout="responsive"
-        objectFit="cover"
-        quality={100}
-      />
+    <div
+      className="project-card"
+      onClick={() => (location.href = `${data.public_url}`)}
+    >
+      <div className="w-full">
+        <Image
+          className="rounded-t-xl"
+          src={imgSrc}
+          alt="Cover Image"
+          width="100"
+          height="50"
+          layout="responsive"
+          objectFit="cover"
+          quality={100}
+          priority
+        />
+      </div>
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">{Title}</h1>
         <h3 className="mt-4 text-xl">{description}</h3>

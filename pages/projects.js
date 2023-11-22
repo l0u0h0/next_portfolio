@@ -22,6 +22,7 @@ export default function Projects({ projects }) {
     
     return b_startDate - a_startDate;
   });
+  
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-6 py-24 mb-10">
@@ -77,8 +78,6 @@ export async function getStaticProps() {
   const projectNames = projects.results.map(
     (aProject) => aProject.properties.Name.title[0].plain_text
   );
-
-  console.log(projects);
 
   return {
     props: { projects },
