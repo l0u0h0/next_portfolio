@@ -11,10 +11,12 @@
 }
 
 .project-card {
-  @apply flex flex-col m-3 rounded-xl w-full
+  @apply flex flex-col m-3 rounded-xl w-60 md:w-80
   transition duration-300 transform border border-gray-300
   hover:scale-105 hover:shadow-lg
+  bg-slate-100
   dark:border-gray-200/50
+  dark:bg-slate-700
   dark:hover:shadow-gray-400/50
   hover:text-blue-600;
 }
@@ -25,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-slate-900 dark:text-white;
+  @apply text-slate-900 dark:text-slate-100;
 }
 
 footer {
@@ -34,7 +36,7 @@ footer {
 }
 
 a {
-  @apply text-slate-500 hover:text-slate-700 dark:text-slate-400;
+  @apply text-slate-500 hover:text-slate-700 dark:text-slate-400 hover:dark:text-slate-800 transition duration-200;
 }
 
 p {

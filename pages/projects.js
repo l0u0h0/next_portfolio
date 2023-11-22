@@ -22,20 +22,23 @@ export default function Projects({ projects }) {
     
     return b_startDate - a_startDate;
   });
-  
+
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen px-6 py-24 mb-10">
+      <div className="flex flex-col items-center justify-center min-h-screen min-w-[376px] px-6 py-24 mb-10">
         <Head>
           <title>Port Folio</title>
-          <meta name="description" content="Hello World" />
+          <meta name="description" content="l0u0h0's PortFolio(Projects) - with Notion" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1 className="text-4xl font-bold sm:text-6xl">
-          총 프로젝트 :
-          <span className="pl-4 text-blue-500">{projects.results.length}</span>
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 m-6 py-10 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-40 text-center md:text-left">
+          <h1 className="text-3xl font-bold sm:text-4xl">
+            총 프로젝트 :
+            <span className="pl-4 text-slate-700 dark:text-slate-300">{projects.results.length}</span>
+          </h1>
+        </div>
+        <hr className="w-2/3 min-w-[246px] md:min-w-[720px] mt-4" />
+        <div className="grid grid-cols-1 md:grid-cols-2 m-6 pb-10 gap-8">
           {sortProjects.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
