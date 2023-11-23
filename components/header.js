@@ -6,7 +6,7 @@ export default function Header() {
     <header className="w-full min-w-[600px] text-gray-600">
       <div className="container mx-auto flex flex-wrap p-5 lg:px-32 md:px-20 flex-col lg:flex-row justify-center items-center">
         <Link href="/">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4">
+          <a className="flex title-font font-medium items-center text-zinc-800 mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -25,17 +25,13 @@ export default function Header() {
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-lg title-font justify-evenly">
           <Link href="/">
-            <a className="mr-5 hover:text-gray-900">홈</a>
+            <a className="mr-7 hover:text-gray-900">홈</a>
           </Link>
           <Link href="/projects">
-            <a className="mr-5 hover:text-gray-900">프로젝트</a>
+            <a className="mr-7 hover:text-gray-900">프로젝트</a>
           </Link>
           <Link href="/contact">
-            <a className="mr-5 hover:text-gray-900">About-Me</a>
-          </Link>
-          {/* contact 페이지 링크 예정 */}
-          <Link href="/contact">
-            <a className="mr-5 hover:text-gray-900">Contact</a>
+            <a className="mr-7 hover:text-gray-900">기본 정보</a>
           </Link>
           {/* 다크모드 토글버튼 */}
           <DarkModeToggleButton />

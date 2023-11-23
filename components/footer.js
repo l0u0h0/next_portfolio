@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <div className="container px-32 py-10 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
-              <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <a className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800">
                 <span className="ml-3 text-2xl">Yuhan's PortFolio</span>
               </a>
             </Link>
