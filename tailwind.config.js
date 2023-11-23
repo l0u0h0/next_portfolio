@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jalnan: ['Jalnan', 'san-serif']
+        jalnan: ['Jalnan', 'san-serif'],
+        jalnangothic: ['JalnanGothic']
       }
     },
   },
