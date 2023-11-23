@@ -67,5 +67,5 @@ ul {
 }
 
 li {
-  @apply hover:text-zinc-800 hover:dark:text-zinc-200;
+  @apply whitespace-normal break-words hover:text-zinc-800 hover:dark:text-zinc-200;
 }
