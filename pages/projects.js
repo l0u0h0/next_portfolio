@@ -18,7 +18,7 @@ export default function Projects({ projects }) {
         </Head>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-0 md:gap-10 text-center md:text-left items-center">
           <Image 
-            src={theme === 'dark' ? `/images/Macbook_white.png` : `/images/Macbook_black.png`}
+            src={theme === 'dark' ? `/Images/Macbook_white.png` : `/Images/Macbook_black.png`}
             alt="Cover Image"
             width="100"
             height="100"
