@@ -25,13 +25,13 @@ export default function Header() {
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-lg title-font justify-evenly">
           <Link href="/">
-            <a className="mr-7 hover:text-gray-900">홈</a>
+            <a className="mr-7 hover:text-gray-900 dark:text-zinc-300">홈</a>
           </Link>
           <Link href="/projects">
-            <a className="mr-7 hover:text-gray-900">프로젝트</a>
+            <a className="mr-7 hover:text-gray-900 dark:text-zinc-300">프로젝트</a>
           </Link>
           <Link href="/profile">
-            <a className="mr-7 hover:text-gray-900">프로필</a>
+            <a className="mr-7 hover:text-gray-900 dark:text-zinc-300">프로필</a>
           </Link>
           {/* 다크모드 토글버튼 */}
           <DarkModeToggleButton />
