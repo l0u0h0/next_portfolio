@@ -8,7 +8,6 @@ export default function ProjectItem({ data }) {
   const tags = data.properties.Tags.multi_select;
   const start = data.properties.WorkPeriod.date.start;
   const end = data.properties.WorkPeriod.date.end;
-  console.log(data);
 
   return (
     <div
@@ -25,7 +24,7 @@ export default function ProjectItem({ data }) {
           layout="responsive"
           objectFit="cover"
           quality={100}
-          // priority
+          priority
         />
       </div>
       <div className="p-4 flex flex-col">

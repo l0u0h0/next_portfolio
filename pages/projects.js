@@ -6,26 +6,7 @@ import ProjectItem from "../components/projects/project-item";
 import { useTheme } from "next-themes";
 
 export default function Projects({ projects }) {
-  const sortProjects = projects.results.slice().sort((a, b) => {
-    const a_start = a.properties.WorkPeriod.date.start.split("-");
-    const b_start = b.properties.WorkPeriod.date.start.split("-");
-
-    const a_startDate = new Date(
-      a_start[0],
-      a_start[1],
-      a_start[2]
-    );
-
-    const b_startDate = new Date(
-      b_start[0],
-      b_start[1],
-      b_start[2]
-    );
-    
-    return b_startDate - a_startDate;
-  });
-
-  const { theme, _setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <Layout>
@@ -44,6 +25,7 @@ export default function Projects({ projects }) {
             layout="responsive"
             objectFit="fill"
             quality={100}
+            priority
           />
           <h1 className="text-3xl font-bold sm:text-4xl">
             총 프로젝트 :&nbsp;
@@ -52,7 +34,7 @@ export default function Projects({ projects }) {
         </div>
         <hr className="w-2/3 min-w-[246px] md:min-w-[720px] mt-4" />
         <div className="grid grid-cols-1 md:grid-cols-2 m-6 pb-10 gap-8">
-          {sortProjects.map((aProject) => (
+          {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
         </div>
@@ -75,8 +57,8 @@ export async function getStaticProps() {
       page_size: 100,
       sorts: [
         {
-          property: "Name",
-          direction: "ascending",
+          property: "WorkPeriod",
+          direction: "descending",
         },
       ],
     }),
