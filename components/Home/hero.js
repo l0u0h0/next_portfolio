@@ -10,8 +10,8 @@ export default function Hero() {
           <br className="hidden lg:inline-block" />
           Front-End Developer
         </h1>
-        <ul className="mb-8 leading-relaxed text-lg text-left list-disc hover:list-none">
-          <li>
+        <ul className="mb-8 leading-relaxed text-lg text-left list-disc">
+          <li className="hover:decoration-stone-400 hover:decoration-solid">
             팀 구성원들과의<b>커뮤니케이션</b>을 중요시하며<b>모르는 것</b>을
             해결할 때,<b>새로운 것</b>을 배워나갈 때<b>즐거움</b>을 느끼는
             주니어 개발자입니다.

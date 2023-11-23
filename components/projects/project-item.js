@@ -16,11 +16,11 @@ export default function ProjectItem({ data }) {
     >
       <div className="w-full">
         <Image
-          className="rounded-t-xl"
+          className="rounded-t-md"
           src={imgSrc}
           alt="Cover Image"
           width="100"
-          height="50"
+          height="60"
           layout="responsive"
           objectFit="cover"
           quality={100}
@@ -28,19 +28,19 @@ export default function ProjectItem({ data }) {
         />
       </div>
       <div className="p-4 flex flex-col">
-        <h1 className="text-2xl font-bold">{Title}</h1>
-        <div className="flex items-start mt-3">
+        <h1 className="text-xl font-jalnan">{Title}</h1>
+        <div className="flex items-start mt-1 mb-2">
           {tags.map((aTag) => (
             <h1
               key={aTag.id}
-              className="px-2 mr-2 rounded-md text-base bg-sky-200 dark:bg-sky-700 h-7"
+              className="h-5 px-2 py-1 mr-1 rounded-md font-jalnangothic text-xs text-zinc-200 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200"
             >
               {aTag.name}
             </h1>
           ))}
         </div>
-        <h3 className="mt-2 mb-2 text-lg">{description}</h3>
-        <a href={github} className="flex items-center">
+        <h3 className="my-1 text-sm">{description}</h3>
+        <a href={github} className="flex items-center text-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5 mr-1"
@@ -61,8 +61,8 @@ export default function ProjectItem({ data }) {
           </svg>
           GitHub 바로가기
         </a>
-        <p className="my-1">
-          {start} - {end}
+        <p className="mt-1 text-sm">
+          {start} ~ {end}
         </p>
       </div>
     </div>

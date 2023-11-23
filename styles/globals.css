@@ -30,9 +30,9 @@
   }
 
   .project-card {
-    @apply flex flex-col m-3 rounded-xl w-60 md:w-80
-    transition duration-300 transform border-2 border-gray-300
-    hover:scale-105 hover:shadow-lg
+    @apply flex flex-col m-1 rounded-md w-96 md:w-80 lg:w-72
+    transition duration-300 transform border-2 border-zinc-200
+    hover:scale-105 hover:shadow-md
     bg-zinc-100
     dark:border-zinc-700
     dark:bg-zinc-700

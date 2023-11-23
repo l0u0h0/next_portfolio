@@ -10,16 +10,17 @@ export default function Projects({ projects }) {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen min-w-[376px] px-6 py-24 mb-10">
+      <div className="flex flex-col items-center justify-center min-h-screen min-w-[600px] pb-24">
         <Head>
           <title>Projects</title>
           <meta name="description" content="l0u0h0's Projects with Notion" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mr-6 gap-0 md:gap-10 text-center md:text-left items-center">
+        <div className="w-3/4 h-fit flex mx-6 mt-24 md:mr-6 text-start justify-start items-end pb-5">
+          <div className="min-w-[6rem] min-h-[6rem] w-24 h-24">
           <Image 
             src={theme === 'dark' ? `/Images/Macbook_white.png` : `/Images/Macbook_black.png`}
-            alt="Cover Image"
+            alt="Computer Image"
             width="100"
             height="100"
             layout="responsive"
@@ -27,13 +28,19 @@ export default function Projects({ projects }) {
             quality={100}
             priority
           />
-          <h1 className="text-3xl font-bold sm:text-4xl">
-            총 프로젝트 :&nbsp;
-            <span className="text-zinc-700 dark:text-zinc-300">{projects.results.length}</span>
-          </h1>
+          </div>
+          <div className="ml-2 flex flex-col">
+            <h1 className="text-xl font-jalnangothic">
+              총 프로젝트 :&nbsp;
+              <span className="text-zinc-500 dark:text-zinc-400">{projects.results.length}</span>
+            </h1>
+            <p className="font-lg font-semibold">
+            담당한 프로젝트를 최신 순으로 구성했습니다. 프로젝트 소개, 역할, 개발 환경, 느낀 점 등을 확인할 수 있습니다.
+            </p>
+          </div>
         </div>
-        <hr className="w-2/3 min-w-[246px] md:min-w-[720px] mt-4" />
-        <div className="grid grid-cols-1 md:grid-cols-2 m-6 pb-10 gap-8">
+        <hr className="w-4/5 min-w-[246px] md:min-w-[720px] border-2 dark:border-1 border-zinc-900 dark:border-zinc-300 mb-4" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-6 pb-10 gap-4">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}

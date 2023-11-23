@@ -4,7 +4,7 @@ export default function Footer() {
   const thisYear = new Date().getFullYear();
   return (
     <>
-      <footer className="body-font">
+      <footer className="w-full min-w-[600px]">
         <div>
           <div className="container px-32 py-10 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
