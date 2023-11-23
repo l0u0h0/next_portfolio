@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 
-export default function Contact() {
+export default function Profile() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen min-w-[376px] px-6 py-24 mb-10">
         <Head>
-          <title>Contact</title>
+          <title>Profile</title>
           <meta name="description" content="About l0u0h0's" />
           <link rel="icon" href="/favicon.ico" />
         </Head>

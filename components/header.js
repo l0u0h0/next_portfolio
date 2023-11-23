@@ -30,8 +30,8 @@ export default function Header() {
           <Link href="/projects">
             <a className="mr-7 hover:text-gray-900">프로젝트</a>
           </Link>
-          <Link href="/contact">
-            <a className="mr-7 hover:text-gray-900">기본 정보</a>
+          <Link href="/profile">
+            <a className="mr-7 hover:text-gray-900">프로필</a>
           </Link>
           {/* 다크모드 토글버튼 */}
           <DarkModeToggleButton />

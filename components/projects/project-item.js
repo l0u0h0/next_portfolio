@@ -6,6 +6,7 @@ export default function ProjectItem({ data }) {
   const description = data.properties.Description.rich_text[0].plain_text;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
   const tags = data.properties.Tags.multi_select;
+  const part = data.properties.Part.multi_select;
   const start = data.properties.WorkPeriod.date.start;
   const end = data.properties.WorkPeriod.date.end;
 
@@ -29,11 +30,11 @@ export default function ProjectItem({ data }) {
       </div>
       <div className="p-4 flex flex-col">
         <h1 className="text-xl font-jalnan">{Title}</h1>
-        <div className="flex items-start mt-1 mb-2">
+        <div className="flex flex-wrap items-start mb-2">
           {tags.map((aTag) => (
             <h1
               key={aTag.id}
-              className="h-5 px-2 py-1 mr-1 rounded-md font-jalnangothic text-xs text-zinc-200 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200"
+              className="px-2 py-1 mt-1 mr-1 rounded-md font-semibold text-xs text-zinc-200 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200"
             >
               {aTag.name}
             </h1>
