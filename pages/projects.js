@@ -78,12 +78,6 @@ export async function getStaticProps() {
 
   const projects = await res.json();
 
-  const projectIds = projects.results.map((aProject) => aProject.id);
-
-  const projectNames = projects.results.map(
-    (aProject) => aProject.properties.Name.title[0].plain_text
-  );
-
   return {
     props: { projects },
   };

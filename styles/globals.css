@@ -65,3 +65,7 @@ p {
 ul {
   @apply text-zinc-600 dark:text-zinc-300;
 }
+
+li {
+  @apply hover:text-zinc-800 hover:dark:text-zinc-200;
+}
