@@ -4,8 +4,23 @@ import Image from "next/image";
 import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
 import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
-export default function Projects({ projects, theme }) {
+export default function Projects({ projects }) {
+  const { theme } = useTheme();
+  const [curTheme, setCurTheme] = useState(theme);
+
+  useEffect(() => {
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const initialTheme = darkModeMediaQuery.matches ? 'dark' : 'light';
+    if (theme !== initialTheme)
+      setCurTheme(initialTheme);
+  }, [])
+
+  useEffect(() => {
+    setCurTheme(theme);
+  }, [theme]);
+
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen sm:min-w-[640px] pb-24">
@@ -16,16 +31,16 @@ export default function Projects({ projects, theme }) {
         </Head>
         <div className="w-3/4 h-fit flex mx-6 mt-24 md:mr-6 text-start justify-start items-end pb-5">
           <div className="min-w-[6rem] min-h-[6rem] w-24 h-24">
-          <Image 
-            src={theme === 'dark' ? `/Images/Macbook_white.png` : `/Images/Macbook_black.png`}
-            alt="Computer Image"
-            width="100"
-            height="100"
-            layout="responsive"
-            objectFit="fill"
-            quality={100}
-            priority
-          />
+            <Image
+              src={curTheme === 'dark' ? `/Images/Macbook_white.png` : `/Images/Macbook_black.png`}
+              alt="Computer Image"
+              width="100"
+              height="100"
+              layout="responsive"
+              objectFit="fill"
+              quality={100}
+              loading="lazy"
+            />
           </div>
           <div className="ml-2 flex flex-col">
             <h1 className="text-xl font-jalnangothic">
@@ -33,7 +48,7 @@ export default function Projects({ projects, theme }) {
               <span className="text-zinc-500 dark:text-zinc-400">{projects.results.length}</span>
             </h1>
             <p className="font-lg font-semibold">
-            담당한 프로젝트를 최신 순으로 구성했습니다. 프로젝트 소개, 역할, 개발 환경, 느낀 점 등을 확인할 수 있습니다.
+              담당한 프로젝트를 최신 순으로 구성했습니다. 프로젝트 소개, 역할, 개발 환경, 느낀 점 등을 확인할 수 있습니다.
             </p>
           </div>
         </div>
@@ -76,9 +91,7 @@ export async function getStaticProps() {
 
   const projects = await res.json();
 
-  const { theme } = useTheme();
-
   return {
-    props: { projects, theme },
+    props: { projects },
   };
 }
