@@ -59,7 +59,7 @@ a {
 }
 
 b {
-  @apply font-jalnan
+  @apply font-jalnan;
 }
 
 p {
@@ -71,5 +71,5 @@ ul {
 }
 
 li {
-  @apply whitespace-normal break-words hover:text-zinc-800 hover:dark:text-zinc-200;
+  @apply whitespace-normal break-words hover:text-zinc-800 hover:dark:text-zinc-50/100;
 }
