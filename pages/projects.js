@@ -10,7 +10,7 @@ export default function Projects({ projects }) {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen min-w-[600px] pb-24">
+      <div className="flex flex-col items-center justify-center min-h-screen sm:min-w-[640px] pb-24">
         <Head>
           <title>Projects</title>
           <meta name="description" content="l0u0h0's Projects with Notion" />

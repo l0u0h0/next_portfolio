@@ -4,9 +4,9 @@ export default function Footer() {
   const thisYear = new Date().getFullYear();
   return (
     <>
-      <footer className="w-full min-w-[600px]">
+      <footer className="w-full min-w-fit sm:min-w-[640px]">
         <div>
-          <div className="container px-32 py-10 mx-auto flex items-center sm:flex-row flex-col">
+          <div className="container px-10 sm:px-32 py-4 sm:py-10 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800">
                 <span className="ml-3 text-2xl">Yuhan's PortFolio</span>

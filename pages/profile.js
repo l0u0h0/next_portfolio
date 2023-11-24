@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Profile() {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-start min-h-screen min-w-[600px] w-full px-48 pt-12 pb-24">
+      <div className="flex flex-col items-center justify-start min-h-screen sm:min-w-[600px] w-full px-10 sm:px-48 pt-12 pb-24">
         <Head>
           <title>Profile</title>
           <meta name="description" content="About l0u0h0's" />
