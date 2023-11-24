@@ -9,10 +9,10 @@ export default function Home() {
         <title>l0u0h0's</title>
         <meta name="description" content="l0u0h0's Front-end Portfolio Web" />
         <meta name="author" content="l0u0h0" />
-
+        <meta property="og:url" content="//next-portfolio-l0u0h0.vercel.app" />
         <meta
           property="og:image"
-          content="/images/meta-image.jpg"
+          content="https://velog.velcdn.com/images/l0u0h0/post/bbdb3edd-2982-48a7-9d2e-cab3177f32fc/image.jpg"
         />
         <meta property="og:title" content="이유한 포트폴리오" />
         <link rel="icon" href="/favicon.ico" />
