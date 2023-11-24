@@ -12,15 +12,14 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://st4.depositphotos.com/21936426/24029/i/450/depositphotos_240297282-stock-photo-concepts-working-readiness-notebooks-coffee.jpg"
+          content="/images/meta-image.jpg"
         />
+        <meta property="og:title" content="이유한 포트폴리오" />
+        <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:description"
-          content="l0u0h0's Portfolio Web
-          learning for Front-end Developer"
+          content="FrontEnd Developer LeeYuHan"
         />
-        <meta property="og:title" content="l0u0h0's" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
         <div className="xl:mx-auto flex p-5 lg:px-32 md:px-20 py-24 md:flex-row flex-col items-center justify-center">
