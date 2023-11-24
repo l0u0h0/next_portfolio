@@ -5,9 +5,7 @@ import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
 import { useTheme } from "next-themes";
 
-export default function Projects({ projects }) {
-  const { theme } = useTheme();
-
+export default function Projects({ projects, theme }) {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen sm:min-w-[640px] pb-24">
@@ -78,7 +76,9 @@ export async function getStaticProps() {
 
   const projects = await res.json();
 
+  const { theme } = useTheme();
+
   return {
-    props: { projects },
+    props: { projects, theme },
   };
 }
