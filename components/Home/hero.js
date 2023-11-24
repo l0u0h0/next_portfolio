@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <>
-      <div className="lg:w-1/2 md:w-1/2 lg:pr-10 md:pr-6 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <div className="flex flex-wrap-reverse md:flex-nowrap justify-center">
+      <div className="md:basis-1/2 lg:w-1/2 md:w-1/2 mx-4 px-2 md:pr-6 lg:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          이유한,
+          이유한,&nbsp;
           <br className="hidden lg:inline-block" />
           Front-End Developer
         </h1>
@@ -37,9 +37,9 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="md:w-1/2 w-5/6">
+      <div className="md:basis-1/2 w-2/3 sm:w-5/6 md:w-3/4 lg:w-1/2 mb-10">
         <Animation />
       </div>
-    </>
+    </div>
   );
 }
