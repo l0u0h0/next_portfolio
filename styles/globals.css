@@ -58,6 +58,10 @@ a {
   @apply text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 hover:dark:text-zinc-500 transition duration-200;
 }
 
+b {
+  @apply font-jalnan
+}
+
 p {
   @apply text-zinc-600 dark:text-zinc-300;
 }
