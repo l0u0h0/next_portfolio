@@ -3,17 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'jalnan';
-  src: url(/fonts/Jalnan.ttf) format('truetype');
+  font-family: "jalnan";
+  src: url(/fonts/Jalnan.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'JalnanGothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @layer components {
@@ -36,7 +37,7 @@
     bg-zinc-100
     dark:border-zinc-700
     dark:bg-zinc-700
-    dark:hover:shadow-gray-400/50
+    dark:hover:shadow-gray-400/50;
   }
 }
 
@@ -71,5 +72,5 @@ ul {
 }
 
 li {
-  @apply whitespace-normal break-words hover:text-zinc-800 hover:dark:text-zinc-50/100;
+  @apply whitespace-normal break-words hover:text-zinc-800 hover:dark:text-zinc-50/100 my-1;
 }
