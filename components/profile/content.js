@@ -137,7 +137,7 @@ export default function Content() {
                 </small>
                 <li className="pl-4 text-base font-sans">
                   - 상반기동안 9 To 6의 교육 시간으로 총 <b>800시간의 학습</b>을 진행하며 <b>Vue.js</b>를 이용한
-                  Front-end, <b>SpringBoot</b>를 이용한 Back-end 등 웹 개발에 대한
+                  Front-end, <b>SpringBoot</b>를 이용한 Back-end 등 웹 개발에 대한{" "}
                   <b>심화적인</b> 역량 성장
                 </li>
                 <li className="pl-4 text-base font-sans">
@@ -246,10 +246,6 @@ export default function Content() {
               <b>Redux-Saga</b> 미들웨어를 통해 Redux를 통한 <b>비동기 처리</b>
               와 Action 요청 중 API 요청 등 Redux 사용을 더욱 손쉽게 사용하는
               법을 학습함.
-            </li>
-            <li className="ml-4 list-disc">
-              추후 <b>react-query</b> 학습을 통해 <b>서버 데이터</b>의 요청 처리
-              및 <b>캐싱</b>에 대해 탐구해볼 예정임.
             </li>
           </ul>
 
