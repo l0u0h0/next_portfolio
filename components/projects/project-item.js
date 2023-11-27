@@ -13,7 +13,7 @@ export default function ProjectItem({ data }) {
   return (
     <div
       className="project-card"
-      onClick={() => (location.href = `${data.public_url}`)}
+      onClick={() => (window.open(data.public_url, '_blank'))}
     >
       <div className="w-full">
         <Image
@@ -24,7 +24,7 @@ export default function ProjectItem({ data }) {
           height="60"
           layout="responsive"
           objectFit="cover"
-          quality={100}
+          quality={50}
           priority
         />
       </div>
