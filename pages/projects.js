@@ -25,7 +25,7 @@ export default function Projects({ projects }) {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen sm:min-w-[640px] pb-24">
         <Head>
-          <title>Projects</title>
+          <title>프로젝트</title>
           <meta name="description" content="l0u0h0's Projects with Notion" />
           <link rel="icon" href="/favicon.ico" />
         </Head>

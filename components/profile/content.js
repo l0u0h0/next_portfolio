@@ -9,12 +9,12 @@ export default function Content() {
           <hr className="min-w-[246px] mt-4 border-2 dark:border-1 border-zinc-900 dark:border-zinc-300" />
         </div>
         <div className="flex flex-wrap md:flex-nowrap">
-          <div className="w-40 min-w-[10rem] m-auto mt-10 md:m-10">
+          <div className="w-44 min-w-[10rem] h-fit p-2 m-auto mt-10 md:m-10 border-zinc-700 dark:border-zinc-200 border-y-[3px]">
             <Image
               className="rounded-md"
               src={`/Images/profile-image.jpg`}
               alt="Profile Image"
-              width="75"
+              width="78"
               height="100"
               layout="responsive"
               objectFit="fill"
@@ -146,10 +146,76 @@ export default function Content() {
           <h1 className="text-2xl sm:text-3xl">👩🏻‍💻 Skills</h1>
           <hr className="min-w-[246px] mt-4 border-2 dark:border-1 border-zinc-900 dark:border-zinc-300" />
         </div>
-        <div className="flex flex-wrap md:flex-nowrap">
-          <a className="h-6 text-yellow-300">
-            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-          </a>
+        <div className="flex flex-col py-5">
+          <ul className="mx-5 leading-relaxed text-lg text-start">
+            <li className="flex items-center my-3">
+              <img className="w-8 h-8 mr-2" src="https://www.svgrepo.com/show/452092/react.svg" alt="React" />
+              <b className="text-2xl">React</b>
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            클래스형 컴포넌트 사용으로 리액트의 <b>라이프 사이클</b>을 이해하고 있으며 함수형 컴포넌트에서의 여러 <b>Hook</b> 들의 사용법을 숙지하고 있음.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            모바일 화면을 베이스로 한 <b>반응형 디자인</b>을 도입한 웹앱 개발 경험이 있으며 대부분의 프로젝트를 <b>React</b>를 활용해 진행함.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            <b>렌더링 최적화</b>를 통한 클라이언트 <b>성능 최적화</b>를 이루는 개발을 탐구하고 있음.
+            </li>
+          </ul>
+          
+          <ul className="mx-5 leading-relaxed text-lg text-start">
+            <li className="flex items-center my-3">
+              <img className="w-8 h-8 mr-2" src="https://www.svgrepo.com/show/349419/javascript.svg" alt="javascript" />
+              <b className="text-2xl">Javascript</b>
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            <b>ES6</b> 에서 새롭게 추가된 <b>화살표 함수</b>와 <b>let</b>, <b>const</b>를 이용한 변수 선언 및 스코프에 따른 사용, <b>async await</b> 을 활용한 비동기 처리에 대해 학습하고 프로젝트에서 활용해봤음
+            </li>
+            <li className="flex items-center my-3">
+              <img className="w-8 h-8 mr-2" src="https://www.svgrepo.com/show/349540/typescript.svg" alt="typescript" />
+              <b className="text-2xl">Typescript</b>
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            여러 데이터를 다루는 프로젝트를 통해 <b>엄밀한 타입 지정</b>에 대해 필요성을 체감해 학습 시작해 현재는 프로젝트에서 주로 활용 중.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            <b>Interface</b>와 <b>type</b>을 학습했으며 <b>any</b> 타입의 사용을 지양하고 <b>타입 가드</b>로 컴파일러가 추론할 수 있도록 탐구하고 있음.
+            </li>
+          </ul>
+          
+          <ul className="mx-5 leading-relaxed text-lg text-start">
+            <li className="flex items-center my-3">
+              <img className="w-8 h-8 mr-2" src="https://www.svgrepo.com/show/354274/redux.svg" alt="Redux" />
+              <b className="text-2xl">Redux</b>
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            컴포넌트가 복잡해질수록 관리하기 힘들었던 상태 관리를 <b>전역 상태</b> 관리 라이브러리를 통해 <b>props-drilling</b> 없이 상태 관리를 해봄.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+              중앙 집중식 전역 상태 관리를 통해 <b>Top-Down</b> 방식의 데이터 전달 방식을 적용해봄.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            <b>Redux-Saga</b> 미들웨어를 통해 Redux를 통한 <b>비동기 처리</b>와 Action 요청 중 API 요청 등 Redux 사용을 더욱 손쉽게 사용하는 법을 학습함.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+              추후 <b>react-query</b> 학습을 통해 <b>서버 데이터</b>의 요청 처리 및 <b>캐싱</b>에 대해 탐구해볼 예정임.
+            </li>
+          </ul>
+          
+          <ul className="mx-5 leading-relaxed text-lg text-start">
+            <li className="flex items-center my-3">
+              <img className="w-8 h-8 mr-2" src="https://cdn.worldvectorlogo.com/logos/recoil-js.svg" alt="recoil" />
+              <b className="text-2xl">Recoil</b>
+              <img className="w-8 h-8 mx-2" src="https://storage.googleapis.com/candycode/jotai/jotai-mascot.png" alt="Jotai" />
+              <b className="text-2xl">Jotai</b>
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            그동안 중앙 집중 식의 <b>Flux 패턴</b>을 통한 상태 관리 라이브러리인 Redux만 사용해보다가 Atom 패턴의 상태 관리 라이브러리인 <b>Recoil</b>을 학습. <b>useState</b>와 비슷한 구조로 친숙하게 사용.
+            </li>
+            <li className="ml-4 font-sans list-disc">
+            이 후 유사한 상태관리 라이브러리인 <b>Jotai</b>를 프로젝트에 적용. 비동기 요청 시에도 손쉬운 사용을 경험해봄.
+            </li>
+          </ul>
         </div>
       </div>
     </>
