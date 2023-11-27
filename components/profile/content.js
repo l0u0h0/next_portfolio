@@ -163,9 +163,9 @@ export default function Content() {
           </p>
           <hr className="min-w-[246px] mt-4 border-2 dark:border-1 border-zinc-900 dark:border-zinc-300" />
         </div>
-        <div className="flex flex-col py-5">
-          <ul className="mx-5 leading-relaxed text-lg text-start">
-            <li className="flex items-center my-3">
+        <div className="flex flex-col my-10">
+          <ul className="mx-5 mb-3 leading-relaxed text-lg text-start">
+            <li className="flex items-center">
               <img
                 className="w-8 h-8 mr-2"
                 src="https://www.svgrepo.com/show/452092/react.svg"
@@ -188,8 +188,8 @@ export default function Content() {
             </li>
           </ul>
 
-          <ul className="mx-5 leading-relaxed text-lg text-start">
-            <li className="flex items-center my-3">
+          <ul className="mx-5 my-3 leading-relaxed text-lg text-start">
+            <li className="flex items-center">
               <img
                 className="w-8 h-8 mr-2"
                 src="https://www.svgrepo.com/show/349419/javascript.svg"
@@ -203,7 +203,9 @@ export default function Content() {
               <b>async await</b> 을 활용한 비동기 처리에 대해 학습하고
               프로젝트에서 활용해봤음
             </li>
-            <li className="flex items-center my-3">
+            </ul>
+          <ul className="mx-5 my-3 leading-relaxed text-lg text-start">
+            <li className="flex items-center">
               <img
                 className="w-8 h-8 mr-2"
                 src="https://www.svgrepo.com/show/349540/typescript.svg"
@@ -222,8 +224,8 @@ export default function Content() {
             </li>
           </ul>
 
-          <ul className="mx-5 leading-relaxed text-lg text-start">
-            <li className="flex items-center my-3">
+          <ul className="mx-5 my-3 leading-relaxed text-lg text-start">
+            <li className="flex items-center">
               <img
                 className="w-8 h-8 mr-2"
                 src="https://www.svgrepo.com/show/354274/redux.svg"
@@ -251,8 +253,8 @@ export default function Content() {
             </li>
           </ul>
 
-          <ul className="mx-5 mb-6 leading-relaxed text-lg text-start">
-            <li className="flex flex-wrap items-center my-1">
+          <ul className="mx-5 mb-6 my-3 leading-relaxed text-lg text-start">
+            <li className="flex flex-wrap items-center">
               <div className="flex my-1">
               <img
                 className="w-8 h-8 mr-2 rounded-md"
