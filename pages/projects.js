@@ -43,11 +43,11 @@ export default function Projects({ projects }) {
             />
           </div>
           <div className="ml-2 flex flex-col">
-            <h1 className="text-xl font-jalnangothic">
+            <h1 className="text-2xl font-jalnangothic">
               총 프로젝트 :&nbsp;
               <span className="text-zinc-500 dark:text-zinc-400">{projects.results.length}</span>
             </h1>
-            <p className="font-lg font-semibold">
+            <p className="font-xl font-semibold italic text-zinc-500 dark:text-zinc-400">
               담당한 프로젝트를 최신 순으로 구성했습니다. 프로젝트 소개, 역할, 개발 환경, 느낀 점 등을 확인할 수 있습니다.
             </p>
           </div>

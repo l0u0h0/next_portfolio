@@ -136,7 +136,7 @@ export default function Content() {
                   2023.01 ~ 현재
                 </small>
                 <li className="pl-4 text-base font-sans">
-                  - <b>9 To 6</b>의 교육 시간으로 총 800시간의 학습을 진행하며 <b>Vue</b>를 이용한
+                  - 상반기동안 9 To 6의 교육 시간으로 총 <b>800시간의 학습</b>을 진행하며 <b>Vue.js</b>를 이용한
                   Front-end, <b>SpringBoot</b>를 이용한 Back-end 등 웹 개발에 대한
                   <b>심화적인</b> 역량 성장
                 </li>
