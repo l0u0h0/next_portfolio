@@ -2,10 +2,11 @@ import Image from "next/image";
 import { useEffect, useCallback, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
+import ReactTooltip from "react-tooltip";
 
 const customTheme = {
-  light: ["hsl(0, 0%, 94%)", "hsl(225,92%,20%)"],
-  dark: ["hsl(0, 0%, 22%)", "hsl(225,92%,77%)"],
+  light: ["hsl(255, 0%, 90%)", "hsl(255,10%,11%)"],
+  dark: ["hsl(0, 0%, 20%)", "hsl(225,10%,88%)"],
 };
 
 export default function Content() {
@@ -139,7 +140,7 @@ export default function Content() {
             />
           </svg>
         </div>
-        {year && (
+        {year !== null && (
           <div className="w-full flex mb-10">
             <button
               className={`font-jalnan ${
@@ -158,7 +159,9 @@ export default function Content() {
                 theme={customTheme}
                 hideColorLegend
                 hideTotalCount
-              />
+              >
+                <ReactTooltip html />
+              </GitHubCalendar>
             </div>
             <button
               className={`font-jalnan ${

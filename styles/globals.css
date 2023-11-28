@@ -19,7 +19,7 @@
 
 @layer components {
   .bg-primary {
-    @apply bg-white dark:bg-zinc-800;
+    @apply bg-zinc-50 dark:bg-zinc-800;
   }
 
   .title-font {
