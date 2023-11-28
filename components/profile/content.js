@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 const customTheme = {
   light: ["hsl(255, 0%, 90%)", "hsl(255,10%,11%)"],
@@ -159,8 +160,25 @@ export default function Content() {
                 theme={customTheme}
                 hideColorLegend
                 hideTotalCount
+                renderBlock={(block, activity) =>
+                  React.cloneElement(block, {
+                    'data-tip': true,
+                    'data-for': 'react-tooltip',
+                    'data-html': true,
+                    'data-effect': 'solid',
+                    'data-delay-show': 500,
+                    'data-place': 'top',
+                    'data-type': 'light',
+                    'data-offset': '{"top": 10, "right": 10}',
+                    'data-border': true,
+                    'data-iscapture': true,
+                    'data-event': 'click',  // 툴팁을 클릭하여 보이도록 설정 (선택 사항)
+                    'data-event-off': 'dblclick',  // 툴팁을 더블 클릭하여 닫도록 설정 (선택 사항)
+                    'data-tooltip': `${activity.count} activities on ${activity.date}`,
+                  })
+                }
               >
-                <ReactTooltip html />
+                <ReactTooltip id="react-tooltip" />
               </GitHubCalendar>
             </div>
             <button
