@@ -140,7 +140,7 @@ export default function Content() {
           </svg>
         </div>
         {year && (
-          <div className="flex w-full mb-10">
+          <div className="w-full flex mb-10">
             <button
               className={`font-jalnan ${
                 year <= 2022 && `text-zinc-500 dark:text-zinc-400`
@@ -150,7 +150,7 @@ export default function Content() {
             >
               Prev
             </button>
-            <div className="w-full m-10 overflow-x-auto">
+            <div className="w-full mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
               <GitHubCalendar
                 username="l0u0h0"
                 year={year}
