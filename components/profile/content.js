@@ -26,7 +26,7 @@ export default function Content() {
       const getYear = new Date().getFullYear();
       setYear(getYear);
     }
-  }, []);
+  }, [year]);
 
   return (
     <>
@@ -140,8 +140,8 @@ export default function Content() {
             />
           </svg>
         </div>
-        {year !== null && (
-          <div className="w-full flex mb-10">
+        {year && (
+          <div className="w-full mx-auto flex mb-10 justify-center">
             <button
               className={`font-jalnan ${
                 year <= 2022 && `text-zinc-500 dark:text-zinc-400`
@@ -151,7 +151,7 @@ export default function Content() {
             >
               Prev
             </button>
-            <div className="w-full mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
+            <div className="w-fit mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
               <GitHubCalendar
                 username="l0u0h0"
                 year={year}
