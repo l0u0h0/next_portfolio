@@ -24,7 +24,7 @@ export default function ProjectItem({ data }) {
           height="60"
           layout="responsive"
           objectFit="cover"
-          quality={50}
+          quality={75}
           priority
         />
       </div>
