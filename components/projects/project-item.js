@@ -15,7 +15,7 @@ export default function ProjectItem({ data }) {
       className="project-card"
       onClick={() => (window.open(data.public_url, '_blank'))}
     >
-      <div className="w-full">
+      <div className="w-full relative">
         <Image
           className="rounded-t-md"
           src={imgSrc}
@@ -27,6 +27,16 @@ export default function ProjectItem({ data }) {
           quality={75}
           priority
         />
+        <div className="absolute top-4 -left-[5%]">
+        {part.map((aTag) => (
+            <h1
+              key={aTag.id}
+              className="px-4 py-2 rounded-md font-light font-jalnan text-md text-zinc-200 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200"
+            >
+              {aTag.name}
+            </h1>
+          ))}
+        </div>
       </div>
       <div className="p-4 flex flex-col">
         <h1 className="text-xl font-jalnan">{Title}</h1>
