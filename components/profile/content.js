@@ -157,6 +157,7 @@ export default function Content() {
               <ActivityCalendar
                 username="l0u0h0"
                 year={year}
+                colorScheme={theme}
                 theme={customTheme}
                 blockMargin={3}
                 style={{
