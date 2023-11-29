@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useCallback, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
+import ActivityCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -152,34 +153,23 @@ export default function Content() {
             >
               Prev
             </button>
-            <div className="w-fit mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
-              <GitHubCalendar
+            <div className="calendar w-fit mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
+              <ActivityCalendar
                 username="l0u0h0"
                 year={year}
-                colorScheme={theme}
                 theme={customTheme}
-                hideColorLegend
-                hideTotalCount
+                blockMargin={3}
+                style={{
+                  fontFamily: "jalnangothic",
+                }}
                 renderBlock={(block, activity) =>
                   React.cloneElement(block, {
-                    'data-tip': true,
-                    'data-for': 'react-tooltip',
-                    'data-html': true,
-                    'data-effect': 'solid',
-                    'data-delay-show': 500,
-                    'data-place': 'top',
-                    'data-type': 'light',
-                    'data-offset': '{"top": 10, "right": 10}',
-                    'data-border': true,
-                    'data-iscapture': true,
-                    'data-event': 'click',  // 툴팁을 클릭하여 보이도록 설정 (선택 사항)
-                    'data-event-off': 'dblclick',  // 툴팁을 더블 클릭하여 닫도록 설정 (선택 사항)
-                    'data-tooltip': `${activity.count} activities on ${activity.date}`,
+                    'data-tooltip-id': 'react-tooltip',
+                    'data-tooltip-html': `[${activity.date}] ${activity.count} commits 기록`,
                   })
                 }
-              >
-                <ReactTooltip id="react-tooltip" />
-              </GitHubCalendar>
+              />
+              <ReactTooltip id="react-tooltip" className="font-jalnangothic" />
             </div>
             <button
               className={`font-jalnan ${

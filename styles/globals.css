@@ -91,3 +91,11 @@ div:dark::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+.calendar .react-activity-calendar__footer {
+  background-color: transparent;
+}
+
+.calendar .react-activity-calendar__calendar {
+  height: 128px;
+}
