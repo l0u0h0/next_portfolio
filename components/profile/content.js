@@ -146,10 +146,10 @@ export default function Content() {
           <div className="w-full mx-auto flex mb-10 justify-center">
             <button
               className={`font-jalnan ${
-                year <= 2018 && `text-zinc-500 dark:text-zinc-400`
+                year <= 2020 && `text-zinc-500 dark:text-zinc-400`
               }`}
               onClick={() => prevYear()}
-              disabled={year <= 2018}
+              disabled={year <= 2020}
             >
               Prev
             </button>
