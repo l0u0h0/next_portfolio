@@ -13,7 +13,7 @@ export default function ProjectItem({ data }) {
   return (
     <div
       className="project-card"
-      onClick={() => (window.open(data.public_url, '_blank'))}
+      onClick={() => window.open(data.public_url, "_blank")}
     >
       <div className="w-full relative">
         <Image
@@ -24,14 +24,14 @@ export default function ProjectItem({ data }) {
           height="60"
           layout="responsive"
           objectFit="cover"
-          quality={75}
+          quality={50}
           priority
         />
         <div className="absolute top-4 -left-[5%]">
-        {part.map((aTag) => (
+          {part.map((aTag) => (
             <h1
               key={aTag.id}
-              className="px-4 py-2 rounded-md font-light font-jalnan text-md text-zinc-100 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200 border-2 border-zinc-200 dark:border-zinc-600"
+              className="px-4 py-2 rounded-md font-light font-jalnangothic text-md text-zinc-100 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200 border-2 border-zinc-200 dark:border-zinc-600"
             >
               {aTag.name}
             </h1>

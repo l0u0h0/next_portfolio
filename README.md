@@ -1,4 +1,4 @@
-# [LeeYuHan's PortFolio](https://next-portfolio-l0u0h0.vercel.app/projects)
+# [LeeYuHan's PortFolio](https://next-portfolio-l0u0h0.vercel.app)
 
 ## Web Portfolio
 
