@@ -31,7 +31,7 @@ export default function ProjectItem({ data }) {
         {part.map((aTag) => (
             <h1
               key={aTag.id}
-              className="px-4 py-2 rounded-md font-light font-jalnan text-md text-zinc-200 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200"
+              className="px-4 py-2 rounded-md font-light font-jalnan text-md text-zinc-100 dark:text-zinc-700 bg-zinc-600 dark:bg-zinc-200 border-2 border-zinc-200 dark:border-zinc-600"
             >
               {aTag.name}
             </h1>
