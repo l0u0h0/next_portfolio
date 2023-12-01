@@ -51,7 +51,7 @@ export default function ProjectItem({ data }) {
           ))}
         </div>
         <h3 className="my-1 text-sm">{description}</h3>
-        <a href={github} className="flex items-center text-sm">
+        <a href={github} className="flex w-fit items-center text-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5 mr-1"

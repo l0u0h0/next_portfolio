@@ -58,7 +58,7 @@ footer {
 }
 
 a {
-  @apply text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 hover:dark:text-zinc-500 transition duration-200;
+  @apply border-b-2 border-transparent text-zinc-600 hover:text-zinc-700 dark:text-zinc-400 hover:dark:text-zinc-500 duration-200 hover:border-zinc-700 hover:dark:border-zinc-500 transition-all;
 }
 
 p {
@@ -79,13 +79,13 @@ div::-webkit-scrollbar {
 
 div::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color:  rgb(161 161 170 / 1);
+  background-color: rgb(161 161 170 / 1);
   background-clip: padding-box;
   border: 6px solid transparent;
 }
 
 div:dark::-webkit-scrollbar-thumb {
-  background-color:  rgb(63 63 70 / 1);
+  background-color: rgb(63 63 70 / 1);
 }
 
 div::-webkit-scrollbar-track {
@@ -97,5 +97,5 @@ div::-webkit-scrollbar-track {
 }
 
 .calendar .react-activity-calendar__calendar {
-  height: 128px;
+  height: 9rem;
 }

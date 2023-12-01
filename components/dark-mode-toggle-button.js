@@ -5,14 +5,15 @@ export default function DarkModeToggleButton() {
    * them : 현재 값,
    * setTheme : 값 바꾸기
    */
-  const { theme, setTheme } = useTheme();
+  const { theme, systemTheme, setTheme } = useTheme();
+  const curTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <>
       <button
         className="inline-flex items-center bg-gray-100 hover:bg-gray-50 dark:bg-slate-600 dark:hover:bg-slate-700 dark:text-slate-900 border-0 py-1 px-3 focus:outline-none hover:text-orange-500 dark:hover:text-yellow-500 rounded text-base duration-200"
         type="button"
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onClick={() => setTheme(curTheme === "dark" ? "light" : "dark")}
       >
         {/* Light Mode */}
         <svg

@@ -3,12 +3,12 @@ import React, { useEffect, useCallback, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import ActivityCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
-import { Tooltip as ReactTooltip } from 'react-tooltip';
-import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const customTheme = {
   light: ["hsl(255, 0%, 90%)", "hsl(255,10%,11%)"],
-  dark: ["hsl(0, 0%, 20%)", "hsl(225,10%,88%)"],
+  dark: ["hsl(0, 0%, 22%)", "hsl(225,0%,100%)"],
 };
 
 export default function Content() {
@@ -87,7 +87,9 @@ export default function Content() {
                 <br />
                 컴퓨터공학부 소프트웨어학 전공
                 <br />
-                <small className="mt-0 mb-1">2017.03 ~ 2023.02 졸업 <b>[3.85/4.5]</b></small>
+                <small className="mt-0 mb-1">
+                  2017.03 ~ 2023.02 졸업 <b>[3.85/4.5]</b>
+                </small>
                 <br /> 환일고등학교
                 <br />
                 <small>2014.03 ~ 2017.02 졸업</small>
@@ -154,19 +156,18 @@ export default function Content() {
               Prev
             </button>
             <div className="calendar w-fit mx-4 my-10 lg:mx-10 overflow-x-auto duration-200">
-              <ActivityCalendar
+              <GitHubCalendar
                 username="l0u0h0"
                 year={year}
                 colorScheme={theme}
                 theme={customTheme}
-                blockMargin={3}
                 style={{
                   fontFamily: "jalnangothic",
                 }}
                 renderBlock={(block, activity) =>
                   React.cloneElement(block, {
-                    'data-tooltip-id': 'react-tooltip',
-                    'data-tooltip-html': `[${activity.date}] ${activity.count} commits 기록`,
+                    "data-tooltip-id": "react-tooltip",
+                    "data-tooltip-html": `[${activity.date}] ${activity.count} commits 기록`,
                   })
                 }
               />
