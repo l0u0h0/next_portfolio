@@ -41,6 +41,10 @@
     dark:hover:shadow-gray-400/50
     dark:hover:bg-zinc-600;
   }
+
+  .footer-icon {
+    @apply w-6 h-6 hover:scale-110 transition;
+  }
 }
 
 h1,

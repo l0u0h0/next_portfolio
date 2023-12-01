@@ -8,26 +8,30 @@ export default function Footer() {
         <div>
           <div className="container px-10 sm:px-32 py-4 sm:py-10 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
-              <a className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800">
+              <a className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800 hover:border-transparent hover:dark:border-transparent">
                 <span className="ml-3 text-2xl">Yuhan's PortFolio</span>
               </a>
             </Link>
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-              © {thisYear} Next.js PortFolio —
+              © {thisYear} l0u0h0's Web PortFolio —
               <a
                 href="https://fork-fluorine-608.notion.site/Lee-Yu-Han-Front-Developer-b8cc6a69fb06478f8f2d01f4288f49d4?pvs=4"
                 rel="noopener noreferrer"
                 className="text-gray-600 ml-1"
                 target="_blank"
               >
-                @author-l0u0h0
+                @author-l0u0h0(Lee YuHan)
               </a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center items-center sm:justify-start">
-              <a className="text-gray-500" href="https://github.com/l0u0h0" target="_blank">
+              <a
+                className="text-gray-500 hover:border-transparent hover:dark:border-transparent"
+                href="https://github.com/l0u0h0"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
+                  className="footer-icon"
                   viewBox="-1 -1 24 24"
                 >
                   <rect
@@ -44,10 +48,14 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500" href="https://velog.io/@l0u0h0" target="_blank">
+              <a
+                className="ml-3 text-gray-500 hover:border-transparent hover:dark:border-transparent"
+                href="https://velog.io/@l0u0h0"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
+                  className="footer-icon"
                   viewBox="0 0 24 24"
                 >
                   <rect
@@ -64,14 +72,18 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500" href="https://www.instagram.com/gom.dol.ssu/" target="_blank">
+              <a
+                className="ml-3 text-gray-500 hover:border-transparent hover:dark:border-transparent"
+                href="https://www.instagram.com/gom.dol.ssu/"
+                target="_blank"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-6 h-6"
+                  className="footer-icon"
                   viewBox="0 0 24 24"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
