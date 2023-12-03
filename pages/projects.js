@@ -58,7 +58,7 @@ export default function Projects({ projects }) {
               담당한 프로젝트를 정리했습니다. 프로젝트 소개, 역할, 개발 환경,
               느낀 점 등을 확인할 수 있습니다.
             </p>
-            <a className="w-fit font-jalnan text-zinc-800 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-500">
+            <a className="w-fit font-jalnan text-zinc-800 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-500 cursor-pointer">
               Notion PortFolio 바로가기
             </a>
           </div>
