@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useCallback, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import ActivityCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
@@ -12,7 +11,7 @@ const customTheme = {
 };
 
 export default function Content() {
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
   const [year, setYear] = useState(null);
 
   const prevYear = useCallback(() => {
@@ -159,7 +158,7 @@ export default function Content() {
               <GitHubCalendar
                 username="l0u0h0"
                 year={year}
-                colorScheme={theme}
+                colorScheme={theme === 'system' ? systemTheme : theme}
                 theme={customTheme}
                 style={{
                   fontFamily: "jalnangothic",
