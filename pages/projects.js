@@ -74,8 +74,7 @@ export default function Projects({ projects }) {
   );
 }
 
-// 빌드될 때 호출
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const options = {
     method: "POST",
     headers: {
@@ -104,6 +103,5 @@ export async function getStaticProps() {
 
   return {
     props: { projects },
-    revalidate: 10,
   };
 }
