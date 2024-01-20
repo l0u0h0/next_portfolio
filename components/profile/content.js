@@ -158,7 +158,7 @@ export default function Content() {
               <GitHubCalendar
                 username="l0u0h0"
                 year={year}
-                colorScheme={theme === 'system' ? systemTheme : theme}
+                colorScheme={theme === "system" ? systemTheme : theme}
                 theme={customTheme}
                 style={{
                   fontFamily: "jalnangothic",
@@ -215,10 +215,10 @@ export default function Content() {
                 관심을 가지고 있습니다.
               </li>
               <li>
-                현재 <b>삼성 청년 SW 아카데미</b>에서 알고리즘에 기반한{" "}
-                <b>웹개발 교육 과정</b>을 자바 전공자 반으로 수료 중에 있습니다.
-                이 과정에서 <b>팀 프로젝트</b>를 경험하며 <b>Slack</b>,{" "}
-                <b>Jira</b>, <b>Gitlab</b> 등 협업 툴에 대한 경험이 있습니다.
+                <b>삼성 청년 SW 아카데미</b>에서 알고리즘에 기반한{" "}
+                <b>웹개발 교육 과정</b>을 자바 전공자 반을 수료한 경험이
+                있습니다. 이 과정에서 <b>팀 프로젝트</b>를 경험하며 <b>Slack</b>
+                , <b>Jira</b>, <b>Gitlab</b> 등 협업 툴에 대한 경험이 있습니다.
               </li>
             </ul>
           </div>
@@ -249,7 +249,7 @@ export default function Content() {
                 <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{" "}
                 <br /> 9기 자바 전공자반{" "}
                 <small className="text-zinc-400 dark:text-zinc-400 font-extralight">
-                  2023.01 ~ 현재
+                  2023.01 ~ 2023.12
                 </small>
                 <li className="pl-4 text-base font-sans">
                   - 상반기동안 9 To 6의 교육 시간으로 총 <b>800시간의 학습</b>을
