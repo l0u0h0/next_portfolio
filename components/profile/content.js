@@ -99,7 +99,7 @@ export default function Content() {
                 <br />
                 9기 자바 전공자반
                 <br />
-                <small className="mt-0 mb-1">2023.01 ~ 현재</small>
+                <small className="mt-0 mb-1">2023.01 ~ 2023.12 수료</small>
               </li>
             </ul>
           </div>

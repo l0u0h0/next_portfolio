@@ -24,8 +24,9 @@ export default function Hero() {
             관심을 가지고 있습니다.
           </li>
           <li>
-            현재, <b>삼성 청년 SW 아카데미</b>에서 팀 프로젝트를 진행하며 이를{" "}
-            <b>적용</b>할 방안에 대해 <b>탐구</b>하고 <b>성장</b> 중에 있습니다.
+            <b>삼성 청년 SW 아카데미</b>에서 교육 받고, 팀 프로젝트를 진행하며
+            이를 <b>적용</b>할 방안에 대해 <b>탐구</b>하고 <b>성장</b>한 경험이
+            있습니다.
           </li>
         </ul>
         <div className="w-full flex justify-end">
