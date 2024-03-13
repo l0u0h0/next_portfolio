@@ -11,6 +11,7 @@ const customTheme = {
 };
 
 export default function Content() {
+  const thisYear = new Date().getFullYear();
   const { theme, systemTheme } = useTheme();
   const [year, setYear] = useState(null);
 
@@ -23,11 +24,8 @@ export default function Content() {
   }, [year]);
 
   useEffect(() => {
-    if (!year) {
-      const getYear = new Date().getFullYear();
-      setYear(getYear);
-    }
-  }, [year]);
+    if (!year) setYear(thisYear);
+  }, []);
 
   return (
     <>
@@ -178,10 +176,10 @@ export default function Content() {
             </div>
             <button
               className={`font-jalnan ${
-                year >= 2023 && `text-zinc-500 dark:text-zinc-400`
+                year >= thisYear && `text-zinc-500 dark:text-zinc-400`
               }`}
               onClick={() => nextYear()}
-              disabled={year >= 2023}
+              disabled={year >= thisYear}
             >
               Next
             </button>
