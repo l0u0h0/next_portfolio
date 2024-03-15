@@ -50,7 +50,7 @@
 
 - **FE**
   - Next.JS(v.12) => 추후 14버전으로 업그레이드 예정
-  - Tavascript
+  - Typescript
   - TailwindCSS
   - 상태관리 라이브러리 도입 예정 + React-Query를 통해 캐싱 도입 예정
 - **vercel** 에 정적 배포 중
