@@ -31,11 +31,7 @@
     "**/*.ts",
     "**/*.tsx",
     "postcss.config.js",
-    "tailwind.config.js",
-    "pages/404.js",
-    "pages/index.js",
-    "pages/profile.js",
-    "pages/projects.js"
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
 }
