@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React, { useEffect, useCallback, useState } from "react";
-import GitHubCalendar, { ColorScale } from "react-github-calendar";
+import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
 const customTheme: {
-  light?: ColorScale | [from: string, to: string];
-  dark: ColorScale | [from: string, to: string];
+  light?: [from: string, to: string];
+  dark: [from: string, to: string];
 } = {
   light: ["hsl(255, 0%, 90%)", "hsl(255,10%,11%)"],
   dark: ["hsl(0, 0%, 22%)", "hsl(225,0%,100%)"],
