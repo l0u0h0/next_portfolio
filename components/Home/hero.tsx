@@ -1,3 +1,4 @@
+import React from "react";
 import Animation from "./animation";
 import Link from "next/link";
 

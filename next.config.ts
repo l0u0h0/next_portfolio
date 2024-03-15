@@ -9,11 +9,11 @@ const nextConfig = {
     ],
   },
   output: "standalone",
-  webpack: (config, options) => {
+  webpack: (config: { cache: boolean }, _options: any) => {
     config.cache = false;
     return config;
   },
-  swcMinify: false
+  swcMinify: false,
 };
 
 module.exports = nextConfig;
