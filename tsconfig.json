@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES5",
+    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -23,12 +25,17 @@
     }
   },
   "include": [
+    "next.config.js",
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
     "postcss.config.js",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "pages/404.js",
+    "pages/index.js",
+    "pages/profile.js",
+    "pages/projects.js"
   ],
   "exclude": ["node_modules"]
 }

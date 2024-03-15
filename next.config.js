@@ -9,7 +9,7 @@ const nextConfig = {
     ],
   },
   output: "standalone",
-  webpack: (config: { cache: boolean }, _options: any) => {
+  webpack: (config, _options) => {
     config.cache = false;
     return config;
   },
