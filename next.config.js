@@ -3,12 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      "www.notion.so",
-      "images.unsplash.com",
-      "prod-files-secure.s3.us-west-2.amazonaws.com",
+      'www.notion.so',
+      'images.unsplash.com',
+      'prod-files-secure.s3.us-west-2.amazonaws.com',
     ],
   },
-  output: "standalone",
+  output: 'standalone',
   webpack: (config, _options) => {
     config.cache = false;
     return config;
@@ -16,4 +16,4 @@ const nextConfig = {
   swcMinify: false,
 };
 
-module.exports = nextConfig;
+export default nextConfig;

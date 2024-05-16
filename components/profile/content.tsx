@@ -1,17 +1,10 @@
-import Image from "next/image";
-import React, { useEffect, useCallback, useState } from "react";
-import GitHubCalendar from "react-github-calendar";
-import { useTheme } from "next-themes";
-import { Tooltip as ReactTooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
-
-const customTheme: {
-  light?: [from: string, to: string];
-  dark: [from: string, to: string];
-} = {
-  light: ["hsl(255, 0%, 90%)", "hsl(255,10%,11%)"],
-  dark: ["hsl(0, 0%, 22%)", "hsl(225,0%,100%)"],
-};
+import Image from 'next/image';
+import React, { useEffect, useCallback, useState } from 'react';
+import GitHubCalendar from 'react-github-calendar';
+import { useTheme } from 'next-themes';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
+import { CUSTOM_THEME } from '@/app/constant';
 
 export default function Content() {
   const thisYear = new Date().getFullYear();
@@ -55,7 +48,7 @@ export default function Content() {
                 이유한
                 <br />
                 (LeeYuHan)
-              </b>{" "}
+              </b>{' '}
               <br />
             </p>
           </div>
@@ -160,18 +153,18 @@ export default function Content() {
                 username="l0u0h0"
                 year={year}
                 colorScheme={
-                  theme === "dark" || theme === "light" ? theme : systemTheme
+                  theme === 'dark' || theme === 'light' ? theme : systemTheme
                 }
-                theme={customTheme}
+                theme={CUSTOM_THEME}
                 style={{
-                  fontFamily: "jalnangothic",
+                  fontFamily: 'jalnangothic',
                 }}
                 renderBlock={(block, activity) =>
                   React.cloneElement(block, {
-                    "data-tooltip-id": "react-tooltip",
-                    "data-tooltip-html": `${activity.date.split("-")[0]}년 ${
-                      activity.date.split("-")[1]
-                    }월 ${activity.date.split("-")[2]}일 ${
+                    'data-tooltip-id': 'react-tooltip',
+                    'data-tooltip-html': `${activity.date.split('-')[0]}년 ${
+                      activity.date.split('-')[1]
+                    }월 ${activity.date.split('-')[2]}일 ${
                       activity.count
                     } activity`,
                   })
@@ -207,18 +200,18 @@ export default function Content() {
                 목표로 <b>학습</b>하며 <b>성장</b>하고 있습니다.
               </li>
               <li>
-                팀 구성원들과의 <b>커뮤니케이션</b>을 중요시하며 모르는 것을{" "}
+                팀 구성원들과의 <b>커뮤니케이션</b>을 중요시하며 모르는 것을{' '}
                 <b>해결</b>할 때, 새로운 것을 <b>학습</b>할 때 <b>즐거움</b>을
                 느끼는 개발자입니다.
               </li>
               <li>
-                <b>React</b>를 활용한 <b>웹 프론트엔드 개발</b>을 주로 하였고{" "}
+                <b>React</b>를 활용한 <b>웹 프론트엔드 개발</b>을 주로 하였고{' '}
                 <b>반응형 디자인</b>을 통한 웹앱 프로젝트 진행 경험이 있습니다.
                 최근엔 <b>웹 성능 최적화</b>나 <b>웹 접근성</b>을 고려한 개발에
                 관심을 가지고 있습니다.
               </li>
               <li>
-                <b>삼성 청년 SW 아카데미</b>에서 알고리즘에 기반한{" "}
+                <b>삼성 청년 SW 아카데미</b>에서 알고리즘에 기반한{' '}
                 <b>웹개발 교육 과정</b>을 자바 전공자 반을 수료한 경험이
                 있습니다. 이 과정에서 <b>팀 프로젝트</b>를 경험하며 <b>Slack</b>
                 , <b>Jira</b>, <b>Gitlab</b> 등 협업 툴에 대한 경험이 있습니다.
@@ -249,8 +242,8 @@ export default function Content() {
           <div className="m-10 ml-0">
             <ul className="leading-relaxed text-lg text-start font-jalnangothic">
               <div className="mb-2">
-                <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{" "}
-                <br /> 9기 자바 전공자반{" "}
+                <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{' '}
+                <br /> 9기 자바 전공자반{' '}
                 <small className="text-zinc-400 dark:text-zinc-400 font-extralight">
                   2023.01 ~ 2023.12
                 </small>
@@ -260,13 +253,13 @@ export default function Content() {
                   이용한 Back-end 등 웹 개발에 대한 <b>심화적인</b> 역량 성장
                 </li>
                 <li className="pl-4 text-base font-sans">
-                  - <b>알고리즘</b>에 기반한 코딩 교육을 통해 <b>구조적</b>이고{" "}
-                  <b>효율적</b>인 코드 작성 역량 강화,{" "}
+                  - <b>알고리즘</b>에 기반한 코딩 교육을 통해 <b>구조적</b>이고{' '}
+                  <b>효율적</b>인 코드 작성 역량 강화,{' '}
                   <b>모의 삼성 SW 역량 테스트</b>에서 <b>A+ (Advanced +)</b>
                   등급 취득
                 </li>
                 <li className="pl-4 text-base font-sans">
-                  - <b>Gitlab</b> 및 <b>Jira</b> 등을 활용하는 자기주도적인{" "}
+                  - <b>Gitlab</b> 및 <b>Jira</b> 등을 활용하는 자기주도적인{' '}
                   <b>팀프로젝트</b> 경험을 통해 여러 기술을 프로젝트에 적용할 수
                   있는 역량과 기술 스택 선정에 대한 폭 및 팀원들과의 <b>소통</b>
                   , <b>컨벤션</b> 규정 등 <b>협업</b> 역량 성장
@@ -319,8 +312,8 @@ export default function Content() {
               <b className="text-2xl font-jalnan">Javascript - 4점</b>
             </li>
             <li className="ml-4 list-disc">
-              <b>ES6</b> 에서 새롭게 추가된 <b>화살표 함수</b>와 <b>let</b>,{" "}
-              <b>const</b>를 이용한 변수 선언 및 스코프에 따른 사용,{" "}
+              <b>ES6</b> 에서 새롭게 추가된 <b>화살표 함수</b>와 <b>let</b>,{' '}
+              <b>const</b>를 이용한 변수 선언 및 스코프에 따른 사용,{' '}
               <b>async await</b> 을 활용한 비동기 처리에 대해 학습하고
               프로젝트에서 활용해봤음
             </li>
@@ -355,7 +348,7 @@ export default function Content() {
               <b className="text-2xl font-jalnan">Redux - 3점</b>
             </li>
             <li className="ml-4 list-disc">
-              컴포넌트가 복잡해질수록 관리하기 힘들었던 상태 관리를{" "}
+              컴포넌트가 복잡해질수록 관리하기 힘들었던 상태 관리를{' '}
               <b>전역 상태</b> 관리 라이브러리를 통해 <b>props-drilling</b> 없이
               상태 관리를 해봄.
             </li>
@@ -412,7 +405,7 @@ export default function Content() {
             <ul className="mb-8 ml-12 mr-6 leading-relaxed text-lg text-left list-disc">
               <li>
                 <small>2023.08.18</small> - <b>삼성 청년 SW 아카데미</b>(SSAFY)
-                공통프로젝트 웹기술 트랙 <b>우수상</b> 수상{" "}
+                공통프로젝트 웹기술 트랙 <b>우수상</b> 수상{' '}
                 <b>
                   (
                   <a
