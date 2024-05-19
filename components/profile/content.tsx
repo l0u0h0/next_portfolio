@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import React, { useEffect, useCallback, useState } from 'react';
 import GitHubCalendar from 'react-github-calendar';
@@ -32,17 +34,16 @@ export default function Content() {
         </div>
         <div className="flex flex-wrap md:flex-nowrap mx-auto">
           <div className="w-44 min-w-[10rem] h-fit p-2 m-auto mt-10 md:m-10 border-zinc-700 dark:border-zinc-200 border-y-[3px] hover:scale-105 duration-300">
-            <Image
-              className="rounded-md"
-              src={`/Images/profile-image.jpg`}
-              alt="Profile Image"
-              width="78"
-              height="100"
-              layout="responsive"
-              objectFit="fill"
-              quality={100}
-              priority
-            />
+            <div className="w-full h-52 relative">
+              <Image
+                className="rounded-md object-cover"
+                src={`/Images/profile-image.jpg`}
+                alt="Profile Image"
+                fill
+                quality={100}
+                priority
+              />
+            </div>
             <p className="flex my-1 justify-center items-center">
               <b className="text-xl text-zinc-800 dark:text-zinc-100 text-center font-jalnan">
                 이유한
@@ -226,39 +227,41 @@ export default function Content() {
           <hr className="min-w-[246px] mt-4 border-2 dark:border-1 border-zinc-900 dark:border-zinc-300" />
         </div>
         <div className="flex flex-wrap md:flex-nowrap">
-          <div className="w-40 min-w-[10rem] m-auto mt-10 md:m-10">
-            <Image
-              className="rounded-md"
-              src={`/Images/SSAFY-image.png`}
-              alt="SSAFY Image"
-              width="100"
-              height="75"
-              layout="responsive"
-              objectFit="fill"
-              quality={100}
-              priority
-            />
-          </div>
-          <div className="m-10 ml-0">
-            <ul className="leading-relaxed text-lg text-start font-jalnangothic">
-              <div className="mb-2">
+          <div className="m-10 mt-0">
+            <div className="w-full flex justify-center items-center gap-4 my-4">
+              <div className="w-40 max-sm:w-1/3 h-28 max-sm:h-12 relative">
+                <Image
+                  className="ml-2 w-full h-auto object-contain"
+                  src={`/Images/SSAFY-image.png`}
+                  alt="SSAFY Image"
+                  fill
+                  quality={100}
+                  priority
+                />
+              </div>
+              <div className="w-full self-centerleading-relaxed text-lg text-start font-jalnangothic text-zinc-600 dark:text-zinc-300">
                 <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{' '}
-                <br /> 9기 자바 전공자반{' '}
+                <br /> 9기 자바 전공자반 <br />
                 <small className="text-zinc-400 dark:text-zinc-400 font-extralight">
                   2023.01 ~ 2023.12
                 </small>
-                <li className="pl-4 text-base font-sans">
+              </div>
+            </div>
+
+            <ul className="leading-relaxed text-lg text-start font-jalnangothic">
+              <div className="mb-2">
+                <li className="text-base font-sans">
                   - 상반기동안 9 To 6의 교육 시간으로 총 <b>800시간의 학습</b>을
                   진행하며 <b>Vue.js</b>를 이용한 Front-end, <b>SpringBoot</b>를
                   이용한 Back-end 등 웹 개발에 대한 <b>심화적인</b> 역량 성장
                 </li>
-                <li className="pl-4 text-base font-sans">
+                <li className="text-base font-sans">
                   - <b>알고리즘</b>에 기반한 코딩 교육을 통해 <b>구조적</b>이고{' '}
                   <b>효율적</b>인 코드 작성 역량 강화,{' '}
                   <b>모의 삼성 SW 역량 테스트</b>에서 <b>A+ (Advanced +)</b>
                   등급 취득
                 </li>
-                <li className="pl-4 text-base font-sans">
+                <li className="text-base font-sans">
                   - <b>Gitlab</b> 및 <b>Jira</b> 등을 활용하는 자기주도적인{' '}
                   <b>팀프로젝트</b> 경험을 통해 여러 기술을 프로젝트에 적용할 수
                   있는 역량과 기술 스택 선정에 대한 폭 및 팀원들과의 <b>소통</b>

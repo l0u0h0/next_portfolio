@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Footer() {
   const thisYear = new Date().getFullYear();
@@ -6,10 +6,11 @@ export default function Footer() {
     <footer className="w-full min-w-fit sm:min-w-[640px]">
       <div>
         <div className="container px-10 sm:px-32 py-4 sm:py-10 mx-auto flex items-center sm:flex-row flex-col">
-          <Link href="/">
-            <a className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800 hover:border-transparent hover:dark:border-transparent">
-              <span className="ml-3 text-2xl">Yuhan's PortFolio</span>
-            </a>
+          <Link
+            href="/"
+            className="flex title-font font-medium items-center md:justify-start justify-center text-zinc-800 hover:border-transparent hover:dark:border-transparent"
+          >
+            <span className="ml-3 text-2xl">Yuhan's PortFolio</span>
           </Link>
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
             © {thisYear} l0u0h0's Web PortFolio —

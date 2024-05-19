@@ -1,4 +1,6 @@
-import { useTheme } from "next-themes";
+'use client';
+
+import { useTheme } from 'next-themes';
 
 export default function DarkModeToggleButton() {
   /**
@@ -6,14 +8,14 @@ export default function DarkModeToggleButton() {
    * setTheme : 값 바꾸기
    */
   const { theme, systemTheme, setTheme } = useTheme();
-  const curTheme = theme === "system" ? systemTheme : theme;
+  const curTheme = theme === 'system' ? systemTheme : theme;
 
   return (
     <>
       <button
         className="inline-flex items-center bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-600 dark:hover:bg-zinc-700 dark:text-slate-900 border-0 py-1 px-3 focus:outline-none hover:text-orange-500 dark:hover:text-yellow-500 rounded text-base duration-200"
         type="button"
-        onClick={() => setTheme(curTheme === "dark" ? "light" : "dark")}
+        onClick={() => setTheme(curTheme === 'dark' ? 'light' : 'dark')}
       >
         {/* Light Mode */}
         <svg

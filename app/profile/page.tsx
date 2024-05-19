@@ -1,4 +1,4 @@
-import Content from '@/components/profile/content';
+import Content from '@/components/Profile/content';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Profile() {
-  return <Content />;
+  return (
+    <div className="flex flex-col items-center justify-start min-h-screen sm:min-w-[600px] w-full px-10 sm:px-48 pt-12 pb-24">
+      <Content />
+    </div>
+  );
 }

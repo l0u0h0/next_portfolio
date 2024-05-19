@@ -1,4 +1,6 @@
-import Image from "next/image";
+'use client';
+
+import Image from 'next/image';
 
 export default function ProjectItem({ data }) {
   const Title = data.properties.Name.title[0].plain_text;
@@ -13,7 +15,7 @@ export default function ProjectItem({ data }) {
   return (
     <div
       className="project-card"
-      onClick={() => window.open(data.public_url, "_blank")}
+      onClick={() => window.open(data.public_url, '_blank')}
     >
       <div className="w-full relative">
         <Image

@@ -1,7 +1,8 @@
 import Footer from '@/components/Common/footer';
 import Header from '@/components/Common/header';
+import '../styles/global.css';
 import type { Metadata } from 'next';
-import { ThemeProvider } from 'next-themes';
+import ThemeRegistry from './_lib/ThemeRegistry';
 
 export const metadata: Metadata = {
   title: {
@@ -22,13 +23,13 @@ export const metadata: Metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="ko">
-      <Header />
-      <body>
-        <ThemeProvider attribute="class">
-          <div className="bg-primary">{children}</div>
-        </ThemeProvider>
+      <body className="bg-primary">
+        <ThemeRegistry>
+          <Header />
+          <div>{children}</div>
+          <Footer />
+        </ThemeRegistry>
       </body>
-      <Footer />
     </html>
   );
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import styles from '../styles/notfound.module.css';
 import { useRouter } from 'next/router';
 import { Metadata } from 'next';

@@ -1,6 +1,5 @@
-import React from "react";
-import Animation from "./animation";
-import Link from "next/link";
+import Animation from './animation';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -31,8 +30,8 @@ export default function Hero() {
           </li>
         </ul>
         <div className="w-full flex justify-end">
-          <Link href="/projects">
-            <a className="btn-project">프로젝트 보러가기</a>
+          <Link href="/projects" className="btn-project">
+            프로젝트 보러가기
           </Link>
         </div>
       </div>
