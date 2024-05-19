@@ -1,7 +1,7 @@
 'use client';
 
 import styles from '../styles/notfound.module.css';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

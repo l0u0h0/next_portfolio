@@ -3,6 +3,7 @@ import Header from '@/components/Common/header';
 import '../styles/global.css';
 import type { Metadata } from 'next';
 import ThemeRegistry from './_lib/ThemeRegistry';
+import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Layout({ children }) {
+export default function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="ko">
       <body className="bg-primary">

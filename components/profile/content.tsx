@@ -11,7 +11,7 @@ import { CUSTOM_THEME } from '@/app/constant';
 export default function Content() {
   const thisYear = new Date().getFullYear();
   const { theme, systemTheme } = useTheme();
-  const [year, setYear] = useState(null);
+  const [year, setYear] = useState<number>(0);
 
   const prevYear = useCallback(() => {
     setYear(year - 1);

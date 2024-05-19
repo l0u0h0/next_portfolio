@@ -2,7 +2,48 @@
 
 import Image from 'next/image';
 
-export default function ProjectItem({ data }) {
+type NotionMultiSelectType = {
+  id: string;
+  name: string;
+};
+
+export interface IProjectItem {
+  id: string;
+  properties: {
+    Name: {
+      title: [{ plain_text: string }];
+    };
+    GitHub: {
+      url: string;
+    };
+    Description: {
+      rich_text: [{ plain_text: string }];
+    };
+    Tags: {
+      multi_select: NotionMultiSelectType[];
+    };
+    Part: {
+      multi_select: NotionMultiSelectType[];
+    };
+    WorkPeriod: {
+      date: {
+        start: string;
+        end: string;
+      };
+    };
+  };
+  cover: {
+    file?: {
+      url: string;
+    };
+    external: {
+      url: string;
+    };
+  };
+  public_url: string;
+}
+
+export default function ProjectItem({ data }: { data: IProjectItem }) {
   const Title = data.properties.Name.title[0].plain_text;
   const github = data.properties.GitHub.url;
   const description = data.properties.Description.rich_text[0].plain_text;

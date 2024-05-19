@@ -1,7 +1,7 @@
 import TitleImage from '@/components/Project/TItleImage';
 import type { Metadata } from 'next';
 import { DATABASE_ID, TOKEN } from '../constant';
-import ProjectItem from '@/components/Project/ProjectItem';
+import ProjectItem, { IProjectItem } from '@/components/Project/ProjectItem';
 
 export const metadata: Metadata = {
   title: '프로젝트',
@@ -62,7 +62,7 @@ export default async function Projects() {
       </div>
       <hr className="w-4/5 min-w-[246px] md:min-w-[720px] border-2 dark:border-1 border-zinc-900 dark:border-zinc-300 mb-4" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-6 pb-10 gap-4">
-        {projects.results.map((aProject) => (
+        {projects.results.map((aProject: IProjectItem) => (
           <ProjectItem key={aProject.id} data={aProject} />
         ))}
       </div>

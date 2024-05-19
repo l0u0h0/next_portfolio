@@ -1,5 +1,8 @@
-export const DATABASE_ID = process.env.NOTION_DATABASE_ID;
-export const TOKEN = process.env.NOTION_TOKEN;
+// export const DATABASE_ID = process.env.NOTION_DATABASE_ID;
+// export const TOKEN = process.env.NOTION_TOKEN;
+
+export const DATABASE_ID = 'cef55a666a5341369beac60fc521f3c0';
+export const TOKEN = 'secret_U951uz9aIYkiYYFpuY4zkAzQhtaGIrczuKEAYaVv4rT';
 
 export const CUSTOM_THEME: {
   light?: [from: string, to: string];
