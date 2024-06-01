@@ -47,7 +47,9 @@ export default function ProjectItem({ data }: { data: IProjectItem }) {
   const Title = data.properties.Name.title[0].plain_text;
   const github = data.properties.GitHub.url;
   const description = data.properties.Description.rich_text[0].plain_text;
-  const imgSrc = data.cover.file?.url || data.cover.external.url;
+  const imgSrc = data.cover.file
+    ? data.cover.file.url
+    : data.cover.external.url;
   const tags = data.properties.Tags.multi_select;
   const part = data.properties.Part.multi_select;
   const start = data.properties.WorkPeriod.date.start;
@@ -59,17 +61,17 @@ export default function ProjectItem({ data }: { data: IProjectItem }) {
       onClick={() => window.open(data.public_url, '_blank')}
     >
       <div className="w-full relative">
-        <Image
-          className="rounded-t-md"
-          src={imgSrc}
-          alt="Cover Image"
-          width="100"
-          height="60"
-          layout="responsive"
-          objectFit="cover"
-          quality={50}
-          priority
-        />
+        <div className="w-full h-40 relative">
+          <Image
+            referrerPolicy="no-referrer"
+            className="rounded-t-md object-cover"
+            src={`${imgSrc}`}
+            alt="Cover Image"
+            fill
+            quality={50}
+            priority
+          />
+        </div>
         <div className="absolute top-4 -left-[5%]">
           {part.map((aTag) => (
             <h1
