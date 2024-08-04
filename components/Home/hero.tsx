@@ -29,7 +29,14 @@ export default function Hero() {
             있습니다.
           </li>
         </ul>
-        <div className="w-full flex justify-end">
+        <div className="w-full flex gap-4 justify-end">
+          <Link
+            href="https://lyh-portfolio.notion.site/b8cc6a69fb06478f8f2d01f4288f49d4"
+            className="btn-project"
+            target="_blank"
+          >
+            포트폴리오 보러가기
+          </Link>
           <Link href="/projects" className="btn-project">
             프로젝트 보러가기
           </Link>
