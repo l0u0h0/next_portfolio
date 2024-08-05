@@ -6,8 +6,8 @@ import ThemeRegistry from './_lib/ThemeRegistry';
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | l0u0h0's",
-    default: "l0u0h0's",
+    template: "%s | 유한's",
+    default: "유한's",
   },
   description: "Front-end Developer Lee Yuhan's Web",
   authors: [{ name: 'l0u0h0', url: 'https://github.com/l0u0h0' }],

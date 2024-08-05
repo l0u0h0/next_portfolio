@@ -7,7 +7,7 @@ import Experience from './Experience';
 import Skills from './Skill';
 import Awards from './Awards';
 
-export default function Content() {
+export default function ProfileContainer() {
   return (
     <>
       <AboutMe />
