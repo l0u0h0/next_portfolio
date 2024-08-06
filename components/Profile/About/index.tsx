@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="m-10 mx-0">
           <ul className="mb-8 ml-12 mr-6 leading-relaxed text-lg text-left list-disc">
             <li className="text-xl text-zinc-700 dark:text-zinc-50 font-semibold mb-2 -ml-4 list-none">
-              안녕하세요. 서비스 개발의 <b>본질</b>에 다가가고픈 <b>Frontend</b>{' '}
+              안녕하세요! 서비스 개발의 <b>본질</b>에 다가가고픈 <b>Frontend</b>{' '}
               개발자 이유한입니다.
             </li>
             <li>

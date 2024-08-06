@@ -15,24 +15,22 @@ export default function Hero() {
         </h1>
         <ul className="mb-8 ml-6 leading-relaxed text-lg text-left list-disc">
           <li>
-            서비스 <b>최적화</b>를 이뤄내 <b>사용자 경험</b>을 끌어올릴 수 있는
-            개발자를 목표로 나아가고 있습니다.
+            사용자와 가장 밀접한 부분에서 효과적으로 서비스를 제공하는{' '}
+            <b>Frontend</b>
+            개발에 관심을 갖게 되었고, 이에 <b>즐거움</b>을 느끼게 되었습니다.
           </li>
           <li>
-            서비스 최적화란 <b>웹 성능 최적화</b> 및 <b>UX 최적화</b>를 통해
-            이루어진다고 생각합니다.
+            보다 <b>완성도 있는 서비스 제공</b>을 위해 즐거움을 원동력 삼아
+            학습하며 성장하는 <b>주니어 개발자</b>입니다.
           </li>
           <li>
-            그렇기에, <b>렌더링 성능 개선</b>과 <b>웹 접근성 향상</b>에 대해
-            관심을 가지고 있습니다.
-          </li>
-          <li>
-            <b>삼성 청년 SW 아카데미</b>에서 교육 받고, 팀 프로젝트를 진행하며
-            이를 <b>적용</b>할 방안에 대해 <b>탐구</b>하고 <b>성장</b>한 경험이
-            있습니다.
+            끊임없는 성장을 위해 <b>컴퓨터 공학</b>을 전공한 후{' '}
+            <b>삼성 청년 SW 아카데미</b>에서 알고리즘 역량을 바탕으로 한{' '}
+            <b>웹 개발 교육</b>과 실무에 기반한 다양한 <b>팀 프로젝트</b>를
+            경험해왔습니다.
           </li>
         </ul>
-        <div className="w-full flex gap-4 justify-end">
+        <div className="w-full flex gap-4 justify-center lg:justify-start">
           <Link
             href="https://lyh-portfolio.notion.site/b8cc6a69fb06478f8f2d01f4288f49d4"
             className="btn-project"
