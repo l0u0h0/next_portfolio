@@ -9,7 +9,7 @@ export default function Experience() {
         <h1 className="text-2xl sm:text-3xl">💼 Experience</h1>
         <hr className="min-w-[246px] mt-4 border-2 dark:border-1 border-zinc-900 dark:border-zinc-300" />
       </div>
-      <div className="flex flex-wrap md:flex-nowrap">
+      <div className="flex flex-wrap md:flex-nowrap py-4">
         <div className="m-10 mt-0">
           <div className="w-full flex justify-center items-center gap-4 my-4">
             <div className="w-40 max-sm:w-1/3 h-28 max-sm:h-12 relative">
@@ -45,12 +45,13 @@ export default function Experience() {
                 등급을 취득함.
               </li>
               <li>
-                - 3회의 다양한 주제로의 팀 프로젝트를 <b>프론트엔드</b> 담당으로
+                - 다양한 주제로의 팀 프로젝트를 <b>프론트엔드</b> 담당으로 3회
                 수행했으며{' '}
                 <a href="https://github.com/l0u0h0/stargate" target="_blank">
                   <b>[StarGate]</b>
                 </a>
-                는 현직 개발자의 심사를 통해 <b>우수 프로젝트</b>로 선정되었음.
+                프로젝트는 현직 개발자의 심사를 통해 <b>우수 프로젝트</b>로
+                선정되었음.
               </li>
               <li>
                 - 웹 개발 및 React, JS에 대한 <b>스터디</b>를 통해 React의

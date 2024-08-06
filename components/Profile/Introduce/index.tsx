@@ -55,7 +55,7 @@ export default function Introduce() {
           </p>
         </div>
         <div className="m-10 ml-0">
-          <ul className="lg:grid lg:grid-cols-2 lg:gap-2 leading-relaxed flex flex-wrap gap-x-10 text-lg text-start">
+          <ul className="sm:grid sm:grid-cols-2 sm:gap-2 leading-relaxed flex flex-wrap gap-x-10 text-lg text-start">
             <li className="mb-2 p-1">
               <b className="text-xl font-jalnan">이메일</b> <br />
               l0u0h0@gmail.com
@@ -110,7 +110,7 @@ export default function Introduce() {
         GitHub 캘린더
       </div>
       {year && (
-        <div className="mx-auto flex mb-10 justify-center">
+        <div className="w-full mx-auto flex mb-10 justify-center">
           <button
             className={`font-jalnan ${
               year <= 2020 && `text-zinc-500 dark:text-zinc-400`

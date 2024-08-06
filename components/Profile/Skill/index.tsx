@@ -23,13 +23,8 @@ export default function Skills() {
             있음.
           </li>
           <li className="ml-4 list-disc">
-            <b>반응형 디자인</b>을 도입한 웹앱 개발 경험이 있으며 대부분의
-            프로젝트를 <b>React</b>를 활용해 진행했기에 이해를 가지고 있음.
-          </li>
-          <li className="ml-4 list-disc">
-            <b>React 18</b> 이상 버전을 경험해보았으며 다양한 훅과{' '}
-            <b>메모이제이션</b>을 위한 메서드를 사용해 <b>렌더링 최적화</b>를
-            탐구해봄.
+            다양한 프로젝트에서 <b>React 18</b> 버전을 사용해보았으며 다양한
+            훅과 메서드를 활용한 <b>최적화</b>에 중점을 두고 학습 중에 있음.
           </li>
         </ul>
 
@@ -67,12 +62,13 @@ export default function Skills() {
             <b className="text-2xl font-jalnangothic">Javascript</b>
           </li>
           <li className="ml-4 list-disc">
-            <b>ES6 +</b> 문법을 사용해보았고 <b>async await</b> 을 활용한 비동기
-            처리에 대해 학습하고 프로젝트에서 활용해봤음.
+            <b>ES6 +</b> 문법에 대한 이해를 갖고있고, <b>async await</b> 을
+            활용한 비동기 처리 등 프로젝트에서 활용해봤음.
           </li>
           <li className="ml-4 list-disc">
-            JS 기반의 여러 <b>프레임워크와 라이브러리</b>에 대한 경험이 있으며
-            새로운 것도 빠르게 적응 가능.
+            가장 많이 다룬 언어이며, 대부분의 프로젝트 진행 시 사용했음.{' '}
+            <b>메모리 구조</b> 및 <b>실행 컨텍스트</b>, <b>GC</b> 등
+            자바스크립트에 대한 이해를 갖고 있음.
           </li>
         </ul>
 
@@ -90,9 +86,9 @@ export default function Skills() {
             필요성을 체감해 학습 시작해 현재는 프로젝트에서 주로 활용 중.
           </li>
           <li className="ml-4 list-disc">
-            <b>Interface</b>와 <b>type</b>을 학습했으며 <b>any</b> 타입의 사용을
-            지양하고 <b>타입 가드</b>로 컴파일러가 추론할 수 있도록 탐구하고
-            있음.
+            <b>Interface</b>와 <b>type</b>의 차이를 알고 있으며 <b>any</b>{' '}
+            타입의 사용을 지양하고 <b>타입 가드</b>로 컴파일러가 추론할 수
+            있도록 탐구하고 있음.
           </li>
         </ul>
 
