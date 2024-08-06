@@ -93,9 +93,6 @@ export default function Introduce() {
               <small className="mt-0 mb-1">
                 2017.03 ~ 2023.02 졸업 <b>[3.85/4.5]</b>
               </small>
-              <br /> 환일고등학교
-              <br />
-              <small>2014.03 ~ 2017.02 졸업</small>
             </li>
             <li className="mb-2 p-1">
               <b className="text-xl font-jalnan">경험</b> <br />
@@ -118,7 +115,7 @@ export default function Introduce() {
             className={`font-jalnan ${
               year <= 2020 && `text-zinc-500 dark:text-zinc-400`
             }`}
-            onClick={() => prevYear()}
+            onClick={prevYear}
             disabled={year <= 2020}
           >
             Prev
@@ -151,7 +148,7 @@ export default function Introduce() {
             className={`font-jalnan ${
               year >= thisYear && `text-zinc-500 dark:text-zinc-400`
             }`}
-            onClick={() => nextYear()}
+            onClick={nextYear}
             disabled={year >= thisYear}
           >
             Next

@@ -3,11 +3,14 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className="flex flex-wrap-reverse md:flex-nowrap justify-center">
-      <div className="md:basis-1/2 lg:w-1/2 md:w-1/2 mx-4 px-2 md:pr-6 lg:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <div className="flex flex-wrap lg:flex-nowrap justify-center">
+      <div className="lg:basis-1/3 w-2/3 mb-10">
+        <Animation />
+      </div>
+      <div className="lg:basis-2/3 px-12 md:pr-6 lg:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          최적화를 향해 나아가는 개발자&nbsp;
-          <br className="hidden lg:inline-block" />
+          즐거움으로 성장하는 개발자,&nbsp;
+          <br className="inline-block" />
           이유한입니다.
         </h1>
         <ul className="mb-8 ml-6 leading-relaxed text-lg text-left list-disc">
@@ -41,9 +44,6 @@ export default function Hero() {
             프로젝트 보러가기
           </Link>
         </div>
-      </div>
-      <div className="md:basis-1/2 w-2/3 sm:w-5/6 md:w-3/4 lg:w-1/2 mb-10">
-        <Animation />
       </div>
     </div>
   );

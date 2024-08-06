@@ -29,8 +29,9 @@ export default async function Projects() {
           <a
             href="https://lyh-portfolio.notion.site/b8cc6a69fb06478f8f2d01f4288f49d4"
             className="w-fit font-jalnan text-zinc-800 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-500 cursor-pointer"
+            target="_blank"
           >
-            포트폴리오 바로가기
+            포트폴리오 열어보기
           </a>
         </div>
       </div>

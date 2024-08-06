@@ -27,10 +27,10 @@ export default function Layout({
 }>) {
   return (
     <html lang="ko">
-      <body className="bg-primary" suppressHydrationWarning>
+      <body className="bg-primary flex flex-col" suppressHydrationWarning>
         <ThemeRegistry>
           <Header />
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </ThemeRegistry>
       </body>

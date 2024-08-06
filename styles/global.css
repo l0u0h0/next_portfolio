@@ -47,6 +47,11 @@
   }
 }
 
+html,
+body {
+  @apply h-full m-0;
+}
+
 h1,
 h2,
 h3,
@@ -58,7 +63,7 @@ h6 {
 
 footer {
   @apply text-gray-600 dark:text-white
-  bg-gray-100 dark:bg-gray-600/50;
+  bg-gray-100 dark:bg-gray-600/50 bottom-0;
 }
 
 a {
