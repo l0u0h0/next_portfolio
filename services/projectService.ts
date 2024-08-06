@@ -5,11 +5,14 @@ export async function getProjectItems() {
     method: 'POST',
     headers: {
       'Notion-Version': '2022-06-28',
-      'content-type': 'application/json; charset=utf-8',
+      'Content-Type': 'application/json; charset=utf-8',
       Authorization: `Bearer ${TOKEN}`,
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
+      Expires: '0',
     },
     body: JSON.stringify({
-      page_size: 100,
+      page_size: 50,
       sorts: [
         {
           property: 'WorkPeriod',
