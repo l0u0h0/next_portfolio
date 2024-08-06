@@ -8,6 +8,7 @@ import GitHubCalendar from 'react-github-calendar';
 import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import GithubSVG from '@/components/Svg/GithubSVG';
+import VelogSVG from '@/components/Svg/VelogSVG';
 
 export default function Introduce() {
   const thisYear = new Date().getFullYear();
@@ -64,15 +65,23 @@ export default function Introduce() {
               010-2044-8798
             </li>
             <li className="mb-2 p-1 overflow-clip">
-              <b className="text-xl font-jalnan">Velog</b> <br />
-              <a href="https://velog.io/@l0u0h0" target="_blank">
-                https://velog.io/@l0u0h0
-              </a>
-            </li>
-            <li className="mb-2 p-1overflow-clip">
-              <b className="text-xl font-jalnan">Git</b> <br />
+              <b className="inline-flex text-xl font-jalnan">
+                <GithubSVG className="w-6 h-6 mr-1" />
+                Git
+              </b>{' '}
+              <br />
               <a href="https://github.com/l0u0h0" target="_blank">
                 https://github.com/l0u0h0
+              </a>
+            </li>
+            <li className="mb-2 p-1 overflow-clip">
+              <b className="inline-flex text-xl font-jalnan">
+                <VelogSVG className="w-6 h-6 mr-1" />
+                Blog
+              </b>{' '}
+              <br />
+              <a href="https://velog.io/@l0u0h0" target="_blank">
+                https://velog.io/@l0u0h0
               </a>
             </li>
             <li className="mb-2 p-1">
@@ -89,7 +98,7 @@ export default function Introduce() {
               <small>2014.03 ~ 2017.02 졸업</small>
             </li>
             <li className="mb-2 p-1">
-              <b className="text-xl font-jalnan">이력</b> <br />
+              <b className="text-xl font-jalnan">경험</b> <br />
               삼성 청년 SW 아카데미
               <br />
               9기 자바 전공자반
