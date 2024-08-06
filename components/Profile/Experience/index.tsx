@@ -1,6 +1,8 @@
 'use client';
 
+import { URL } from '@/app/constant';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Experience() {
   return (
@@ -23,8 +25,15 @@ export default function Experience() {
               />
             </div>
             <div className="w-full self-centerleading-relaxed text-lg text-start font-jalnangothic text-zinc-600 dark:text-zinc-300">
-              <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{' '}
-              <br /> 9기 자바 전공자반 <br />
+              <Link
+                href={URL.ssafy}
+                target="_blank"
+                className="text-zinc-600 dark:text-zinc-300"
+              >
+                <b className="text-xl font-jalnan">삼성 청년 SW 아카데미</b>{' '}
+                <br /> 9기 자바 전공자반
+              </Link>{' '}
+              <br />
               <small className="text-zinc-400 dark:text-zinc-400 font-extralight">
                 2023.01 ~ 2023.12
               </small>
@@ -47,7 +56,7 @@ export default function Experience() {
               <li>
                 - 다양한 주제로의 팀 프로젝트를 <b>프론트엔드</b> 담당으로 3회
                 수행했으며{' '}
-                <a href="https://github.com/l0u0h0/stargate" target="_blank">
+                <a href={URL.stargate_git} target="_blank">
                   <b>[StarGate]</b>
                 </a>
                 프로젝트는 현직 개발자의 심사를 통해 <b>우수 프로젝트</b>로

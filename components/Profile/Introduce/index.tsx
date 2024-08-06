@@ -1,6 +1,6 @@
 'use client';
 
-import { CUSTOM_THEME } from '@/app/constant';
+import { CUSTOM_THEME, URL } from '@/app/constant';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import React, { useState, useCallback, useEffect } from 'react';
@@ -9,6 +9,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import GithubSVG from '@/components/Svg/GithubSVG';
 import VelogSVG from '@/components/Svg/VelogSVG';
+import Link from 'next/link';
 
 export default function Introduce() {
   const thisYear = new Date().getFullYear();
@@ -70,9 +71,9 @@ export default function Introduce() {
                 Git
               </b>{' '}
               <br />
-              <a href="https://github.com/l0u0h0" target="_blank">
+              <Link href={URL.github} target="_blank">
                 https://github.com/l0u0h0
-              </a>
+              </Link>
             </li>
             <li className="mb-2 p-1 overflow-clip">
               <b className="inline-flex text-xl font-jalnan">
@@ -80,9 +81,9 @@ export default function Introduce() {
                 Blog
               </b>{' '}
               <br />
-              <a href="https://velog.io/@l0u0h0" target="_blank">
+              <Link href={URL.velog} target="_blank">
                 https://velog.io/@l0u0h0
-              </a>
+              </Link>
             </li>
             <li className="mb-2 p-1">
               <b className="text-xl font-jalnan">학력</b> <br />

@@ -1,5 +1,8 @@
 'use client';
 
+import { URL } from '@/app/constant';
+import Link from 'next/link';
+
 export default function Awards() {
   return (
     <section className="w-full flex flex-col mx-6 md:mr-6 text-center md:text-left items-start">
@@ -14,14 +17,11 @@ export default function Awards() {
               <b>삼성 청년 SW 아카데미</b>(SSAFY) 공통프로젝트 웹기술 트랙{' '}
               <b>우수상</b> 수상{' '}
               <b>
-                (
-                <a
-                  href="https://fork-fluorine-608.notion.site/Stargate-c60966acfc384a7da08c06d0eabb0992"
-                  target="_blank"
-                >
+                [
+                <Link href={URL.stargate_git} target="_blank">
                   StarGate
-                </a>
-                )
+                </Link>
+                ]
               </b>{' '}
               - <small>2023.08.18</small>
             </li>

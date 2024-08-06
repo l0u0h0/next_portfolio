@@ -13,9 +13,7 @@ export default function ThemeRegistry({
     setIsMount(true);
   }, []);
 
-  if (!isMount) {
-    return null;
-  }
+  if (!isMount) return null;
 
   return <ThemeProvider attribute="class">{children}</ThemeProvider>;
 }

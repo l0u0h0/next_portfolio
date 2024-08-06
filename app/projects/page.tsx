@@ -2,6 +2,8 @@ import TitleImage from '@/components/Project/TItleImage';
 import type { Metadata } from 'next';
 import ProjectItem, { IProjectItem } from '@/components/Project/ProjectItem';
 import { getProjectItems } from '@/services/projectService';
+import Link from 'next/link';
+import { URL } from '../constant';
 
 export const metadata: Metadata = {
   title: '프로젝트',
@@ -23,16 +25,17 @@ export default async function Projects() {
             </span>
           </h1>
           <p className="font-xl font-semibold italic text-zinc-500 dark:text-zinc-400">
-            담당한 프로젝트를 정리했습니다. 프로젝트 소개, 역할, 개발 환경, 느낀
-            점 등을 확인할 수 있습니다.
+            기여한 프로젝트를 정리했습니다.{' '}
+            <b>프로젝트 소개, 역할, 개발 환경, 기여한 점</b> 등을 확인할 수
+            있습니다.
           </p>
-          <a
-            href="https://lyh-portfolio.notion.site/b8cc6a69fb06478f8f2d01f4288f49d4"
+          <Link
+            href={URL.portfolio}
             className="w-fit font-jalnan text-zinc-800 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-500 cursor-pointer"
             target="_blank"
           >
             포트폴리오 열어보기
-          </a>
+          </Link>
         </div>
       </div>
       <hr className="w-4/5 min-w-[246px] md:min-w-[720px] border-2 dark:border-1 border-zinc-900 dark:border-zinc-300 mb-4" />

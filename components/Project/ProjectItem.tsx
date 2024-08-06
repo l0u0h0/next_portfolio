@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import GithubSVG from '@/components/Svg/GithubSVG';
+import Link from 'next/link';
 
 type NotionMultiSelectType = {
   id: string;
@@ -97,14 +98,14 @@ export default function ProjectItem({ data }: { data: IProjectItem }) {
           ))}
         </div>
         <h3 className="my-1 text-sm">{description}</h3>
-        <a
+        <Link
           href={github}
           className="flex w-fit items-center text-sm"
           onClick={(e) => e.stopPropagation()}
         >
           <GithubSVG className="w-5 h-5 mr-1" />
           GitHub 바로가기
-        </a>
+        </Link>
         <p className="mt-1 text-sm">
           {start} ~ {end}
         </p>

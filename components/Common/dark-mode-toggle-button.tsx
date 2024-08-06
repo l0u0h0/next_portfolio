@@ -3,10 +3,6 @@
 import { useTheme } from 'next-themes';
 
 export default function DarkModeToggleButton() {
-  /**
-   * them : 현재 값,
-   * setTheme : 값 바꾸기
-   */
   const { theme, systemTheme, setTheme } = useTheme();
   const curTheme = theme === 'system' ? systemTheme : theme;
 
